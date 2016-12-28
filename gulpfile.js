@@ -14,7 +14,7 @@ gulp.task('lint', function() {
 
 // Compilar  Sass
 gulp.task('sass', function() {
-    return gulp.src('src/scss/*.scss')
+    return gulp.src('src/sass/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/css'));
 });
