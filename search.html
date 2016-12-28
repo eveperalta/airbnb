@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Airbnb</title>
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="nouislider.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link href="src/css/nouislider.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -21,7 +21,7 @@
         <div class="col s3 m3">
           <input type="date" class="datepicker browser-default" placeholder="Llegada">
         </div>
-        <div class="input-field col s3 m3">
+        <div class="col s3 m3">
         <select class="icons">
             <option value="" disabled selected>1 Huésped</option>
             <option value="" data-icon="" class="">1 Adulto</option>
@@ -34,31 +34,31 @@
 <div class="row">
 <div class="col s12 m12">
  <div class="divider"></div>
-  <div class="section col s3 m3">
+  <div class="section col s3 m3"><!--EL CHECKBOX NO FUNCIONA!!!!! -->
     <h6>Tipo de Habitacion</h6>
     <span><i class="tiny material-icons">help</i></span> 
   </div>
   <div class="col s3 m3">
      <form action="#">
     <p>
-      <input type="checkbox" id="test5" />
-      <label for="test5"><i class="tiny material-icons">home</i> Casa Entera</label>
+      <input type="checkbox" id="test6" />
+      <label for="test6"><i class="tiny material-icons">home</i> Casa Entera</label>
     </p>
   </form>
   </div>
   <div class="col s3 m3">
       <form action="#">
     <p>
-      <input type="checkbox" id="test5"/>
-      <label for="test5"><i class="tiny material-icons">hotel</i>Habitacion Privada</label>
+      <input type="checkbox" id="test7"/>
+      <label for="test7"><i class="tiny material-icons">hotel</i>Habitacion Privada</label>
     </p>
   </form>
   </div>
   <div class="col s3 m3">
         <form action="#">
     <p>
-      <input type="checkbox" id="test5"/>
-      <label for="test5"><i class="tiny material-icons">weekend</i>Habitacion Compartida</label>
+      <input type="checkbox" id="test8"/>
+      <label for="test8"><i class="tiny material-icons">weekend</i>Habitacion Compartida</label>
     </p>
   </form>
   </div>
@@ -74,8 +74,8 @@
     <form action="#">
     <p class="range-field">
       <input type="range" id="test5" min="0" max="100"  />
-      <span class="thumb" style="left: 17.3594px; height: 0px; width: 0px; top: 10px; margin-left: -6px;"><span class="value">0</span></span>
-      <span class="value right">0</span>
+      <span class="thumb" style="left: 17.3594px; height: 0px; width: 0px; top: 10px; margin-left: -6px;"><span class="value">$6700 CLP</span></span>
+      <span class="thumb" style="left: 17.3594px; height: 0px; width: 0px; top: 10px; margin-left: -6px;"><span class="value right">$500,00 CLP</span>
     </p>
     </form>
   </div>
@@ -110,7 +110,7 @@
     <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
     <div class="row">
       <div class="col s6 m6">
-        <img src="img search/20130730102736_.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -129,7 +129,7 @@
          </p>
       </div>
       <div class="col s6 m6">
-        <img src="img search/20130730102736_.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -152,7 +152,7 @@
   </div>
 <div class="row">
       <div class="col s6 m6">
-        <img src="img search/20130730102736_.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -171,7 +171,47 @@
          </p>
       </div>
       <div class="col s6 m6">
-        <img src="img search/34917234.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <br>
+        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+        <br>
+        <span>1 cama - 1 huésped</span>
+        <p>
+           <span class="rating">
+               <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+               </span>
+            </span>
+         </p>
+      </div>
+      </div>
+<div class="row">
+    <div class="col s6 m6">
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <br>
+        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+        <br>
+        <span>1 cama - 1 huésped</span>
+        <p>
+           <span class="rating">
+               <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+               </span>
+            </span>
+         </p>
+      </div>
+      <div class="col s6 m6">
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -192,7 +232,7 @@
       </div>
 <div class="row">
       <div class="col s6 m6">
-        <img src="img search/D_NQ_NP_2399-MLC4792167221_082013-C.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -211,47 +251,7 @@
          </p>
       </div>
       <div class="col s6 m6">
-        <img src="img search/living.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-           <span class="rating">
-               <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                  37 evaluaciones
-               </span>
-            </span>
-         </p>
-      </div>
-      </div>
-<div class="row">
-      <div class="col s6 m6">
-        <img src="img search/slide02.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-           <span class="rating">
-               <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                  37 evaluaciones
-               </span>
-            </span>
-         </p>
-      </div>
-      <div class="col s6 m6">
-        <img src="img search/34917234.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -272,7 +272,7 @@
       </div>
 <div class="row">
       <div class="col s6 m6">
-        <img src="img search/D_NQ_NP_2399-MLC4792167221_082013-C.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -291,47 +291,7 @@
          </p>
       </div>
       <div class="col s6 m6">
-        <img src="img search/living.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-           <span class="rating">
-               <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                  37 evaluaciones
-               </span>
-            </span>
-         </p>
-      </div>
-      </div>
-<div class="row">
-      <div class="col s6 m6">
-        <img src="img search/34917234.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-           <span class="rating">
-               <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                  37 evaluaciones
-               </span>
-            </span>
-         </p>
-      </div>
-      <div class="col s6 m6">
-        <img src="img search/20130730102736_.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -352,7 +312,7 @@
       </div>
 <div class="row">
       <div class="col s6 m6">
-        <img src="img search/D_NQ_NP_2399-MLC4792167221_082013-C.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -371,47 +331,7 @@
          </p>
       </div>
       <div class="col s6 m6">
-        <img src="img search/living.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-           <span class="rating">
-               <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                  37 evaluaciones
-               </span>
-            </span>
-         </p>
-      </div>
-      </div>
-<div class="row">
-      <div class="col s6 m6">
-        <img src="img search/slide02.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-           <span class="rating">
-               <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                  37 evaluaciones
-               </span>
-            </span>
-         </p>
-      </div>
-      <div class="col s6 m6">
-        <img src="img search/20130730102736_.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -432,7 +352,7 @@
       </div>
 <div class="row">
       <div class="col s6 m6">
-        <img src="img search/34917234.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -451,7 +371,87 @@
          </p>
       </div>
       <div class="col s6 m6">
-        <img src="img search/living.jpg" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <br>
+        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+        <br>
+        <span>1 cama - 1 huésped</span>
+        <p>
+           <span class="rating">
+               <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+               </span>
+            </span>
+         </p>
+      </div>
+      </div>
+<div class="row">
+      <div class="col s6 m6">
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <br>
+        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+        <br>
+        <span>1 cama - 1 huésped</span>
+        <p>
+           <span class="rating">
+               <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+               </span>
+            </span>
+         </p>
+      </div>
+      <div class="col s6 m6">
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <br>
+        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+        <br>
+        <span>1 cama - 1 huésped</span>
+        <p>
+           <span class="rating">
+               <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+               </span>
+            </span>
+         </p>
+      </div>
+      </div>
+<div class="row">
+      <div class="col s6 m6">
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <br>
+        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+        <br>
+        <span>1 cama - 1 huésped</span>
+        <p>
+           <span class="rating">
+               <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+               </span>
+            </span>
+         </p>
+      </div>
+      <div class="col s6 m6">
+        <img src="img search/20130730102736_.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <br>
         <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
         <br>
@@ -486,7 +486,7 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  <script src="nouislider.min.js"></script>
-  <script src="js/source/main.js"></script>
+  <script src="src/js/source/nouislider.min.js"></script>
+  <script src="src/js/source/main.js"></script>
 </body>
 </html>
