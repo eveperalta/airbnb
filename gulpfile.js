@@ -1,0 +1,38 @@
+var gulp = require('gulp');
+var concat = require('gulp-concat');
+var uglify = requre('gulp-uglify');
+var jshint = require('gulp-sass');
+var sass = require('gulp-sass');
+var minifyCSS = require('gulp-minify-css');
+
+gulp.task('lint', function() {
+    return gulp.src('js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+// Compilar  Sass
+gulp.task('sass', function() {
+    return gulp.src('scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('dist/css'));
+});
+
+// Concatenar & Minify JS
+gulp.task('scripts', function() {
+    return gulp.src('js/*.js')
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('all.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
+});
+
+// vigilar cambios en los archivos
+gulp.task('watch', function() {
+    gulp.watch('js/*.js', ['lint', 'scripts']);
+    gulp.watch('scss/*.scss', ['sass']);
+});
+
+// tarea default
+gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
