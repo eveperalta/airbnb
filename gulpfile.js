@@ -1,9 +1,10 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var uglify = requre('gulp-uglify');
-var jshint = require('gulp-sass');
+var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
+var rename = require('gulp-rename');
 
 gulp.task('lint', function() {
     return gulp.src('js/*.js')

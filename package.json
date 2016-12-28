@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "gulp style",
+    "script": "gulp script",
+    "fonts": "gulp fonts",
+    "gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +16,11 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-jshint": "^2.0.4",
+    "gulp-minify": "0.0.14",
     "gulp-minify-code": "^1.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.4",
     "live-refresh": "^2.0.0"
