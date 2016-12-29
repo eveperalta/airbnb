@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
-<!----------------NAV-------->
+	<!----------------NAV-------->
 	<nav>
 		<div class="nav-wrapper">
 			<a href="index.html" class="brand-logo"><img src="img-home/logo.png" style="width:83px;"></a>
@@ -29,64 +29,141 @@
 		<a class="carousel-item" href="#three!"><img src="img-home/airbnb-home.png"></a>
 		<a class="carousel-item" href="#four!"><img src="img-home/airbnb-home2.png"></a>
 	</div>
-	<!------EXPERIENCIAS------>
-	<div class="container">
+	<div class="container"> <!--container apertura-->
 		<div class="row">
-			<div class="col s12 colm12 col12">
-				<div class="container ">
-					<div class="experiencias">
-						<h3>Experiencias</h3>
+			<div class="col s12 m12">
+				<div class="section col s3 m3">
+					<h6>Fechas</h6>
+				</div>
+				<div class="col s3 m3">
+					<input type="date" class="datepicker browser-default" placeholder="Llegada">
+				</div>
+				<div class="col s3 m3">
+					<input type="date" class="datepicker browser-default" placeholder="Salida">
+				</div>
+				<div class="col s3 m3">
+					<select class="icons">
+						<option value="" disabled selected>1 Huésped</option>
+						<option value="" data-icon="" class="">1 Adulto</option>
+						<option value="" data-icon="" class="">0 Niños</option>
+						<option value="" data-icon="" class="">0 Bebés</option>
+					</select>
+				</div>
+			</div>
+		</div><!-- cerrado row -->
+		<!------EXPERIENCIAS------>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12"><!-- ofertas de casas-->
+					<div class="divider"></div>
+					<h6>Alojamientos Recomendados</h6>
+					<br>
+					<div class="row">
+						<div class="col s12 m4">
+							<img src="img-home/aloja1.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+							<br>
+							<p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
+							<br>
+
+							<p>
+								<span class="rating">
+									<span>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star_border</i>
+										60 evaluaciones
+									</span>
+								</span>
+							</p>
+						</div>
+						<div class="col s12 m4">
+							<img src="img-home/aloja2.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+							<br>
+							<p class="titulo"><strong>$35 </strong> Habitación privada en Londres</p>
+							<br>
+
+							<p>
+								<span class="rating">
+									<span>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star_border</i>
+										110 evaluaciones
+									</span>
+								</span>
+							</p>
+						</div>
+						<div class="col s12 m4">
+							<img src="img-home/aloja3.jpg" class="responsive-img" height="300" width="350" alt="">
+							<br>
+							<p><strong>$31 </strong> Habitación privada en Seogsan</p>
+							<br>
+							<p>
+								<span class="rating">
+									<span>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star</i>
+										<i class="tiny material-icons">star_border</i>
+										87 evaluaciones
+									</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!------OPORTUNIDADES------>
+				<div id="hosting_opportunity_div">
+					<div id="hosting_opportunity_div_1">
+						<p id="hosting_opportunity_text">
+							Ser anfitrión te abre un mundo lleno de oportunidades.
+						</p>
+						<p id="earn_money_text">
+							Gana dinero compartiendo tu espacio libre con los huéspedes.
+						</p>
+						<button class="what_earn_link"><a href="#" >
+							cuanto puedes ganar
+						</a></button>
+					</div>
+					<div id="hosting_opportunity_div_2">
 					</div>
 				</div>
 			</div>
-		</div>
-		<!------OPORTUNIDADES------>
-		<div id="hosting_opportunity_div">
-			<div id="hosting_opportunity_div_1">
-				<p id="hosting_opportunity_text">
-					Ser anfitrión te abre un mundo lleno de oportunidades.
-				</p>
-				<p id="earn_money_text">
-					Gana dinero compartiendo tu espacio libre con los huéspedes.
-				</p>
-				<button class="what_earn_link"><a href="#" >
-					cuanto puedes ganar
-				</a></button>
-			</div>
-			<div id="hosting_opportunity_div_2">
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="divider"></div>
-		<div container>
-			<div class="row">
-				<div class="col s3 m3">
+			<footer>
+				<div class="divider"></div>
+				<div container>
+					<div class="row">
+						<div class="col s3 m3">
 
-					<select class="browser-default">
-						<option value="" disabled selected>Español</option>
-						<option value="1">Inglés</option>
-						<option value="2">Portugués</option>
-						<option value="3">Alemán</option>
-					</select>
+							<select class="browser-default">
+								<option value="" disabled selected>Español</option>
+								<option value="1">Inglés</option>
+								<option value="2">Portugués</option>
+								<option value="3">Alemán</option>
+							</select>
 
 
-					<select class="browser-default">
-						<option value="" disabled selected>USD</option>
-						<option value="1">CLP</option>
-						<option value="2">BRL</option>
-						<option value="3">EUR</option>
-					</select>
+							<select class="browser-default">
+								<option value="" disabled selected>USD</option>
+								<option value="1">CLP</option>
+								<option value="2">BRL</option>
+								<option value="3">EUR</option>
+							</select>
 
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</footer>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-	<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
-	<script type="text/javascript" src="src/js/source/nouislider.js"></script>
-	<script src="src/js/source/home.js"></script>
-	<script src="src/js/source/main.js"></script>
-</body>
-</html>
+			</footer>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+			<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
+			<script type="text/javascript" src="src/js/source/nouislider.js"></script>
+			<script src="src/js/source/home.js"></script>
+			<script src="src/js/source/main.js"></script>
+		</body>
+		</html>
