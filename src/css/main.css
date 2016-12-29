@@ -6354,5 +6354,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+.circle img {
+  position: absolute;
+  left: -70px;
+  top: 20px;
+  border: 1px solid white; }
+
+.titulo a {
+  color: #016E09;
+  font-size: 14px;
+  text-decoration: none; }
+
+.rating span i {
+  color: #F80606; }
 
 /*# sourceMappingURL=main.css.map */

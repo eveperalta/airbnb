@@ -1,6 +1,22 @@
 .circle{
-	img{
+   
+   img{
 		position:absolute;
-		z-index: 3;
+		left: -70px;
+		top: 20px;
+		border: 1px solid white;
+	}
+}
+.titulo a{
+	color: #016E09;
+	font-size: 14px;
+	text-decoration:none;
+}
+
+.rating{
+	span{
+		i{
+			color:#F80606;
+		}
 	}
 }

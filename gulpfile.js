@@ -7,16 +7,16 @@ var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 
 gulp.task('lint', function() {
-    return gulp.src('src/js/source/*.js')
+    return gulp.src('js/source/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
 // Compilar  Sass
-gulp.task('sass', function() {
-    return gulp.src('src/sass/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('dist/css'));
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
 });
 
 // Concatenar & Minify JS
@@ -32,7 +32,9 @@ gulp.task('scripts', function() {
 // vigilar cambios en los archivos
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['sass']);
+
+    //gulp.watch('scss/*.scss', ['sass']);
 });
 
 // tarea default
