@@ -16,7 +16,7 @@ gulp.task('lint', function() {
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('.dist/css'));
 });
 
 // Concatenar & Minify JS
