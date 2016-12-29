@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6354,11 +6355,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-.circle img {
-  position: absolute;
-  left: -70px;
-  top: 20px;
-  border: 1px solid white; }
+.circle {
+  border: 3px solid #f3f3f3;
+  display: block;
+  display: block;
+  margin-left: 273px;
+  margin-top: -44px; }
 
 .titulo a {
   color: #016E09;
