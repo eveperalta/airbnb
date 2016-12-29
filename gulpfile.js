@@ -14,9 +14,10 @@ gulp.task('lint', function() {
 
 // Compilar  Sass
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('.dist/css'));
+    .pipe(minifyCSS())
+    .pipe(gulp.dest('dist/css'));
 });
 
 // Concatenar & Minify JS
