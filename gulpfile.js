@@ -40,4 +40,4 @@ gulp.task('watch', function() {
 });
 
 // tarea default
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts']);
