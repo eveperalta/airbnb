@@ -4,89 +4,106 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Airbnb</title>
+
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
-	<link rel="stylesheet" href="dist/css/main.min.css">
+	<link rel="stylesheet" href="src/sass/materialize-src/fonts/roboto">
+
+	<link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
-<!----------------NAV-------->
-	<nav>
-		<div class="nav-wrapper">
-			<a href="index.html" class="brand-logo"><img src="img-home/logo.png" style="width:83px;"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="#">Conviertete en anfitrion</a></li>
-				<li><a href="#">viajes</a></li>
-				<li><a href="#">mensajes</a></li>
-				<li><a href="#">Ayuda</a></li>
-				<li><a href="#"><img class="circle" src="img-home/user.png" style="width: 40px;"></a></li>
-			</ul>
-		</div>
-	</nav>
-	<!--------------SLIDER PRINCIPAL------------------>
-	<div class="carousel carousel-slider">
-		<a class="carousel-item" href="#one!"><img src="img-home/airbnb-home3.png"></a>
-		<a class="carousel-item" href="#two!"><img src="img-home/airbnb-home4.png"></a>
-		<a class="carousel-item" href="#three!"><img src="img-home/airbnb-home.png"></a>
-		<a class="carousel-item" href="#four!"><img src="img-home/airbnb-home2.png"></a>
-	</div>
-	<!------EXPERIENCIAS------>
-	<div class="container">
-		<div class="row">
-			<div class="col s12 colm12 col12">
-				<div class="container ">
-					<div class="experiencias">
-						<h3>Experiencias</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!------OPORTUNIDADES------>
-		<div id="hosting_opportunity_div">
-			<div id="hosting_opportunity_div_1">
-				<p id="hosting_opportunity_text">
-					Ser anfitrión te abre un mundo lleno de oportunidades.
-				</p>
-				<p id="earn_money_text">
-					Gana dinero compartiendo tu espacio libre con los huéspedes.
-				</p>
-				<button class="what_earn_link"><a href="#" >
-					cuanto puedes ganar
-				</a></button>
-			</div>
-			<div id="hosting_opportunity_div_2">
-			</div>
-		</div>
-	</div>
-	<footer>
+	<!--Este es el footer -->
+	<footer class="page-container-responsive footer-container">
 		<div class="divider"></div>
-		<div container>
+		<div class="container cont-footer">
 			<div class="row">
 				<div class="col s3 m3">
-
+					<div class="divider"></div>
 					<select class="browser-default">
-						<option value="" disabled selected>Español</option>
-						<option value="1">Inglés</option>
-						<option value="2">Portugués</option>
-						<option value="3">Alemán</option>
+						<option value="" disabled selected id="idioma">Español</option>
+						<option value="1" id="moneda">Inglés</option>
+						<option value="2" id="moneda">Portugués</option>
+						<option value="3" id="moneda">Alemán</option>
 					</select>
-
-
 					<select class="browser-default">
-						<option value="" disabled selected>USD</option>
+						<option value="" disabled selected id="moneda">USD</option>
 						<option value="1">CLP</option>
 						<option value="2">BRL</option>
 						<option value="3">EUR</option>
 					</select>
-
 				</div>
+				<div class="col s3 m3">	 <!-- Emelys -->
+					<p class="title1-footer">Airbnb</p>
+					<ul class="section table-of-contents">
+
+						<li><a href="#">Acerca de</a></li>
+						<li><a href="#">Empleo</a></li>
+						<li><a href="#">Prensa</a></li>
+						<li><a href="#">Políticas</a></li>
+						<li><a href="#">Ayuda</a></li>
+						<li><a href="#">Diversidad y sentido de pertenencia</a></li>
+					</ul>
+				</div>
+				<div class="col s3 m3">	
+					<p class="title1-footer">Descubre Airbnb</p>
+					<ul class="section table-of-contents">
+						<li><a href="#">Confianza y seguridad</a></li>
+						<li><a href="#">Invitar a un amigo</a></li>
+						<li><a href="#">Airbnb Citizen</a></li>
+						<li><a href="#">Viajes de negocios</a></li>
+						<li><a href="#">Guías</a></li>
+					</ul>
+				</div>		
+				<div class="col s3 m3">	
+					<p class="title1-footer">Hospedar</p>
+					<ul class="section table-of-contents">
+						<li><a href="#">Razones para hospedar</a></li>
+						<li><a href="#">Hospitalidad</a></li>
+						<li><a href="#">Ser un anfitrión responsable</a></li>
+					</ul>
+				</div>	
 			</div>
+			<div class="divider"></div> 
+			<div class="row ultima-linea-footer"> <!--logo footer -->
+				<div class="col s1 m1">
+					<img src="img-search/favicon.ico">
+				</div>
+				<div class="col s1 m4">
+					<span > © Airbnb, Inc.</span>
+				</div>
+				<div class="col s6 m6 right">
+					<span >Términos y Privacidad</span>
+					<span >Mapa del sitio</span>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+			</div>	
 		</div>
 	</footer>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-	<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
-	<script type="text/javascript" src="src/js/source/nouislider.js"></script>
-	<script src="src/js/source/home.js"></script>
-	<script src="src/js/source/main.js"></script>
+
+
+<!--Esta es la parte de la compaginacion-->
+<h1>Paginacion del search</h1>
+<div class="container">
+	<div class="center">
+		<p>1 - 18 de más de 300 alquileres</p>
+		<ul class="pagination">
+			<!--<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>-->
+			<li class="active indigo"><a href="#!">1</a></li>
+			<li class="waves-effect"><a href="#!">2</a></li>
+			<li class="waves-effect"><a href="#!">3</a></li>
+			<li class="waves-effect"><a href="#!">...</a></li>
+			<li class="waves-effect"><a href="#!">17</a></li>
+			<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+		</ul>
+		<div class="divider"></div>
+		<p>Estados Unidos > California > San Francisco</p>
+		<!--Aca termina la compaginacion del search-->
+	</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://use.fontawesome.com/8577e5878f.js"></script>
+<script src="src/js/source/main.js"></script>
 </body>
 </html>
