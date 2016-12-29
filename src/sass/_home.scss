@@ -1,0 +1,83 @@
+nav{
+  background-color:transparent;
+  color:gray;
+  position: absolute;
+  z-index: 3;
+  box-shadow:none;
+    li{
+      color:green !important;
+      a{
+        color: #949393;
+      }
+    }
+}
+.circle{
+       padding-top: 13px;
+    }
+//////////////////////////////////hosting///////////////////////////////
+
+#hosting_opportunity_div{
+  position: relative;
+  width: 950px;
+  height: 300px;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+   #hosting_opportunity_div_1{
+    position: absolute;
+    width: 330px;
+    height: 100%;
+    margin-left: 30px;
+
+      #hosting_opportunity_text{
+        font-family: sans-serif;
+        color: #545454;
+        font-size: 22px;
+        left: 50%;
+        margin-left: -110px;
+        top: 30px;
+        }
+      #earn_money_text{
+        font-family: sans-serif;
+        color: #545454;
+        left: 50%;
+        margin-left: -110px;
+        top: 120px;
+        }
+      .what_earn_link{
+        background-color: #25898b;
+        position: absolute;
+        font-family: sans-serif;
+        color: white;
+        font-weight: bold;
+        padding: 15px 30px 15px 30px;
+        text-decoration: none;
+        border-radius: 2px;
+        bottom: 40px;
+        left: 50%;
+        margin-left: -120px;
+        box-shadow: 0px 1px black;
+
+          &:hover{
+            background-color: gray;;
+          }
+        }
+      }
+
+  #hosting_opportunity_div_2{
+    position: absolute;
+    width: 595px;
+    height: 312px;
+    background-image: url(../img-home/anfitrion.PNG);
+    background-size: cover;
+    right: 0;
+    margin-right: 150px;
+  }
+}
+//////boton hosting
+
+
+
