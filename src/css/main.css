@@ -6370,4 +6370,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .rating span i {
   color: #F80606; }
 
+#moneda {
+  font-family: Roboto, Helvetica; }
+
+#idioma {
+  font-family: Roboto, Helvetica; }
+
+.cont-footer {
+  margin-top: 40px; }
+
 /*# sourceMappingURL=main.css.map */
