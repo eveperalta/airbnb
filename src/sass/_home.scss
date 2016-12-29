@@ -6,8 +6,12 @@ nav{
   box-shadow:none;
     li{
       color:green !important;
+      padding-left: 12px;
       a{
         color: #949393;
+      }
+      nav ul li{
+        padding-left: 12px;
       }
     }
 }
@@ -71,7 +75,7 @@ nav{
     position: absolute;
     width: 595px;
     height: 312px;
-    background-image: url(../img-home/anfitrion.PNG);
+    background-image: url('../../img-home/anfitrion.png');
     background-size: cover;
     right: 0;
     margin-right: 150px;

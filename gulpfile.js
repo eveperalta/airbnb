@@ -7,15 +7,16 @@ var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 
 gulp.task('lint', function() {
-    return gulp.src('js/source/*.js')
+    return gulp.src('src/js/source/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
 // Compilar  Sass
 gulp.task('sass', function () {
-  return gulp.src('src/sass/**/*.scss')
+  return gulp.src('src/sass/main.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(concat('main.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('dist/css'));
 });
