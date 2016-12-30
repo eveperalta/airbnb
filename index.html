@@ -7,10 +7,132 @@
 
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="src/sass/materialize-src/fonts/roboto">
-
-	<link rel="stylesheet" href="src/css/main.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
+	<!----------------NAV-------->
+	<nav>
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo"><img src="img-home/logo.png" style="width:83px;"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#">Conviertete en anfitrion</a></li>
+				<li><a href="#">viajes</a></li>
+				<li><a href="#">mensajes</a></li>
+				<li><a href="#">Ayuda</a></li>
+				<li><a href="#"><img class="circle-defaul" src="img-home/user.png" style="width: 40px;"></a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--------------SLIDER PRINCIPAL------------------>
+	<div class="carousel carousel-slider">
+		<a class="carousel-item" href="#one!"><img src="img-home/airbnb-home3.png"></a>
+		<a class="carousel-item" href="#two!"><img src="img-home/airbnb-home4.png"></a>
+		<a class="carousel-item" href="#three!"><img src="img-home/airbnb-home.png"></a>
+		<a class="carousel-item" href="#four!"><img src="img-home/airbnb-home2.png"></a>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="section col s3 m3">
+					<h6>Fechas</h6>
+				</div>
+				<div class="col s3 m3">
+					<input type="date" class="datepicker browser-default" placeholder="Llegada">
+				</div>
+				<div class="col s3 m3">
+					<input type="date" class="datepicker browser-default" placeholder="Salida">
+				</div>
+				<div class="col s3 m3">
+					<select class="icons">
+						<option value="" disabled selected>1 Huésped</option>
+						<option value="" data-icon="" class="">1 Adulto</option>
+						<option value="" data-icon="" class="">0 Niños</option>
+						<option value="" data-icon="" class="">0 Bebés</option>
+					</select>
+				</div>
+			</div>
+		</div><!-- cerrado row -->
+		<!------EXPERIENCIAS------>
+		<div class="row">
+			<div class="col s12 m4">
+				<img src="img-home/aloja1.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+				<br>
+				<p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
+				<br>
+				<p>
+					<span class="rating">
+						<span>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star_border</i>
+							60 evaluaciones
+						</span>
+					</span>
+				</p>
+			</div>
+			<div class="col s12 m4">
+				<img src="img-home/aloja2.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+				<br>
+				<p class="titulo"><strong>$35 </strong> Habitación privada en Londres</p>
+				<br>
+				<p>
+					<span class="rating">
+						<span>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star_border</i>
+							110 evaluaciones
+						</span>
+					</span>
+				</p>
+			</div>
+			<div class="col s12 m4">
+				<img src="img-home/aloja3.jpg" class="responsive-img" height="300" width="350" alt="">
+				<br>
+				<p><strong>$31 </strong> Habitación privada en Seogsan</p>
+				<br>
+				<p>
+					<span class="rating">
+						<span>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star</i>
+							<i class="tiny material-icons">star_border</i>
+							87 evaluaciones
+						</span>
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="divider"></div>
+				<h6>Alojamientos Recomendados</h6>
+				<br>
+			</div>
+			<div id="hosting_opportunity_div">
+				<div id="hosting_opportunity_div_1">
+					<p id="hosting_opportunity_text">
+						Ser anfitrión te abre un mundo lleno de oportunidades.
+					</p>
+					<p id="earn_money_text">
+						Gana dinero compartiendo tu espacio libre con los huéspedes.
+					</p>
+					<button class="what_earn_link"><a href="#" >
+						cuanto puedes ganar
+					</a></button>
+				</div>
+				<div id="hosting_opportunity_div_2">
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--Este es el footer -->
 	<footer class="page-container-responsive footer-container">
 		<div class="divider"></div>
@@ -43,7 +165,7 @@
 						<li><a href="#">Diversidad y sentido de pertenencia</a></li>
 					</ul>
 				</div>
-				<div class="col s3 m3">	
+				<div class="col s3 m3">
 					<p class="title1-footer">Descubre Airbnb</p>
 					<ul class="section table-of-contents">
 						<li><a href="#">Confianza y seguridad</a></li>
@@ -52,17 +174,17 @@
 						<li><a href="#">Viajes de negocios</a></li>
 						<li><a href="#">Guías</a></li>
 					</ul>
-				</div>		
-				<div class="col s3 m3">	
+				</div>
+				<div class="col s3 m3">
 					<p class="title1-footer">Hospedar</p>
 					<ul class="section table-of-contents">
 						<li><a href="#">Razones para hospedar</a></li>
 						<li><a href="#">Hospitalidad</a></li>
 						<li><a href="#">Ser un anfitrión responsable</a></li>
 					</ul>
-				</div>	
+				</div>
 			</div>
-			<div class="divider"></div> 
+			<div class="divider"></div>
 			<div class="row ultima-linea-footer"> <!--logo footer -->
 				<div class="col s1 m1">
 					<img src="img-search/favicon.ico">
@@ -77,33 +199,32 @@
 					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</footer>
-
-
-<!--Esta es la parte de la compaginacion-->
-<h1>Paginacion del search</h1>
-<div class="container">
-	<div class="center">
-		<p>1 - 18 de más de 300 alquileres</p>
-		<ul class="pagination">
-			<!--<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>-->
-			<li class="active indigo"><a href="#!">1</a></li>
-			<li class="waves-effect"><a href="#!">2</a></li>
-			<li class="waves-effect"><a href="#!">3</a></li>
-			<li class="waves-effect"><a href="#!">...</a></li>
-			<li class="waves-effect"><a href="#!">17</a></li>
-			<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-		</ul>
-		<div class="divider"></div>
-		<p>Estados Unidos > California > San Francisco</p>
-		<!--Aca termina la compaginacion del search-->
+	<!--Esta es la parte de la compaginacion-->
+	<div class="container">
+		<div class="center">
+			<p>1 - 18 de más de 300 alquileres</p>
+			<ul class="pagination">
+				<!--<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>-->
+				<li class="active indigo"><a href="#!">1</a></li>
+				<li class="waves-effect"><a href="#!">2</a></li>
+				<li class="waves-effect"><a href="#!">3</a></li>
+				<li class="waves-effect"><a href="#!">...</a></li>
+				<li class="waves-effect"><a href="#!">17</a></li>
+				<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+			</ul>
+			<div class="divider"></div>
+			<p>Estados Unidos > California > San Francisco</p>
+			<!--Aca termina la compaginacion del search-->
+		</div>
 	</div>
-</div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-<script src="https://use.fontawesome.com/8577e5878f.js"></script>
-<script src="src/js/source/main.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
+	<script type="text/javascript" src="src/js/source/nouislider.js"></script>
+	<script src="src/js/source/home.js"></script>
+	<script src="src/js/source/main.js"></script>
 </body>
 </html>
