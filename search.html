@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Airbnb</title>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/main.css">
-  <link href="src/css/nouislider.min.css" rel="stylesheet">
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="src/sass/materialize-src/fonts/roboto">
+  <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
 <div class="container">
@@ -210,23 +211,209 @@
         </p>
       </form>
     </div>
-    <div class="col s3 m3">
+    <div class="col s2 m2">
       <form action="#">
         <p>
           <input type="checkbox" id="test9"/>
           <label for="test9">Cocina</label>
       </form>
     </div>
-    <div class="col s1 m1 "><!--MOVER BOTON A LA IZQUIERDA!! -->
-      <div class="fixed-action-btn right">
-        <a class="waves-effect btn-flat">
-        <i class="material-icons">keyboard_arrow_down</i>
-        </a>
-        
-       </a>
-      </div>
-       
+    <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
+    <i class="material-icons">keyboard_arrow_down</i>
+    </a>
+  </div>
+</div>
+<div class="container"><!--SEGUNDO FILTRO OCULTO DENTRO DE SERVICIOS -->
+  <div class="row">
+  <div class="divider"></div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test10"/>
+          <label for="test10">Acceso disponible las 24 horas</label>
+        </p>
+      </form>
     </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test11"/>
+          <label for="test11">Aire Acondicionado</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test12"/>
+          <label for="test12">Apto para familias y niños</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test13"/>
+          <label for="test13">Calefacción</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test14"/>
+          <label for="test14">Champú</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test15"/>
+          <label for="test15">Chimenea interior</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test16"/>
+          <label for="test16">Desayuno</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test17"/>
+          <label for="test17">Internet</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test18"/>
+          <label for="test18">Lavadora</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test19"/>
+          <label for="test19">Perchas</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test20"/>
+          <label for="test20">Pestillo en la puerta del dormitorio</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test21"/>
+          <label for="test21">Plancha</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test22"/>
+          <label for="test22">Secador de pelo</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test23"/>
+          <label for="test23">Secadora</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test24"/>
+          <label for="test24">Portero</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test25"/>
+          <label for="test25">Timbre / interfono inalámbrico</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test26"/>
+          <label for="test26">Zona para trabajar con portátiles</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test27"/>
+          <label for="test27">TV por Satélite</label>
+        </p>
+      </form>
+    </div>
+  </div>
+</div><!--fin del segundo filtro de la seccion servicios -->
+<div class="row">
+  <div class="col s12 m12">
+    <div class="divider"></div>
+    <div class="col s3 m3">
+      <h6>Servicios</h6>
+    </div>
+    <div class="col s3 m3">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test28"/>
+          <label for="test28">Acceso para discapasitados</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s2 m2">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test29"/>
+          <label for="test29">Edificio con asensor</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s2 m2">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test9"/>
+          <label for="test9">Cocina</label>
+      </form>
+    </div>
+    <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
+    <i class="material-icons">keyboard_arrow_down</i>
+    </a>
   </div>
 </div>
 
