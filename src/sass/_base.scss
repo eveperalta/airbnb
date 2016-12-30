@@ -24,19 +24,27 @@
 
 //estilos del footer
 #moneda {
-font-family: Roboto, Helvetica;
+font-family: Arial, Helvetica;
 }
 
 #idioma {
-font-family: Roboto, Helvetica;
+	font-family: Arial, Helvetica;
 }
 
 .cont-footer{
-	margin-top:40px;
+	div{
+		a{
+			text-decoration:none;
+		}
+	}  
 }
-.iconos{
-color:$color-iconos;
+
+.color-footer{
+	color:$color-tabla;
 }
+
+
 
 //estilo botonera del search filtro 2
 
+//estilo botonera del search filtro 2
