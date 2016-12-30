@@ -17,10 +17,10 @@
         <h6>Fechas</h6>
       </div>
       <div class="col s3 m3">
-        <input type="date" class="datepicker">
+        <input type="text" class="datepicker browser-default picker__input" placeholder="Llegada" readonly="" id="P81956098" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P81956098_root">
       </div>
       <div class="col s3 m3">
-        <input type="date" class="datepicker">
+        <input type="text" class="datepicker browser-default picker__input" placeholder="Salida" readonly="" id="P75426587" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P75426587_root">
       </div>
       <div class="col s3 m3"><!--FALTA AGREGAR LOS BOTONES DE MAS Y MENOS -->
         <select class="icons">
@@ -407,8 +407,8 @@
     <div class="col s2 m2">
       <form action="#">
         <p>
-          <input type="checkbox" id="test9"/>
-          <label for="test9">Cocina</label>
+          <input type="checkbox" id="test30"/>
+          <label for="test30">Piscina</label>
       </form>
     </div>
     <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
@@ -416,12 +416,46 @@
     </a>
   </div>
 </div>
+<div class="container"><!--CONTAINER OCULTO DENTRO DE SERVICIOS 2 -->
+  <div class="row">
+    <div class="divider"></div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test31"/>
+          <label for="test31">Gimnasio</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test32"/>
+          <label for="test32">Jacuzzi</label>
+        </p>
+      </form>
+    </div>
+    <div class="col s4 m4">
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test33"/>
+          <label for="test33">Parking Gratuito</label>
+        </p>
+      </form>
+    </div>
+  </div>
+  
+      
+    </div>
+  </div>
+</div><!--CONTAINER OCULTO DENTRO DE SERVICIOS 2 -->
 
 
 </div><!--FINAL CONTAINER SECCION ESCONDIDA -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  <script src="src/js/source/nouislider.min.js"></script>
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script type="text/javascript" src="src/js/source/nouislider.js"></script>
+  <script type="src/js/source/home.js"></script>
   <script src="src/js/source/main.js"></script>
 </body>
 </html>
