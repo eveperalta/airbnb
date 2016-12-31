@@ -7,6 +7,10 @@
 
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="src/sass/materialize-src/fonts/roboto">
+	<!--AL ENLAZAR ESTE LINKS DE LOS PRIMEROS EL SIGUIENTE ME LO BORRA QUEDA SIN ESTILO SLIDER CON 3(ALOJAMIENTOS)-->
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css'>
+
 	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" href="dist/css/main.min.css">
 </head>
@@ -20,7 +24,7 @@
 				<li><a href="#">viajes</a></li>
 				<li><a href="#">mensajes</a></li>
 				<li><a href="#">Ayuda</a></li>
-				<li><a href="#"><img class="circle-defaul" src="img-home/user.png" style="width: 40px;"></a></li>
+				<li><a href="#"><img class="circle-default" src="img-home/user.png" style="width: 40px;"></a></li>
 			</ul>
 		</div>
 	</nav>
@@ -34,32 +38,205 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m12">
-				<div class="section col s3 m3">
-					<h6>Fechas</h6>
-				</div>
-				<div class="col s3 m3">
-					<input type="date" class="datepicker browser-default" placeholder="Llegada">
-				</div>
-				<div class="col s3 m3">
-					<input type="date" class="datepicker browser-default" placeholder="Salida">
-				</div>
-				<div class="col s3 m3">
-					<select class="icons">
-						<option value="" disabled selected>1 Huésped</option>
-						<option value="" data-icon="" class="">1 Adulto</option>
-						<option value="" data-icon="" class="">0 Niños</option>
-						<option value="" data-icon="" class="">0 Bebés</option>
-					</select>
+				<div id="searchbar">
+					<div class="searchbar">
+						<form id="searchbar-form" action="/s">
+							<div class="searchbar__input-wrapper">
+								<label class="searchbar__location">
+									<span class="screen-reader-only">
+										Donde
+									</span>
+									<input
+									id="location"
+									type="text"
+									class="input-large input-contrast"
+									autocomplete="off"
+									name="location"
+									placeholder="Destino, ciudad, direccion" />
+									<div id="searchbar-location-error" class="searchbar__location-error hide">
+										ingrese destino
+									</div>
+								</label>
+								<label class="searchbar__checkin">
+									<span class="screen-reader-only">
+										Cuando
+									</span>
+									<input
+									id="checkin"
+									type="text"
+									class="checkin input-large input-contrast"
+									name="checkin"
+									placeholder="Llegada" />
+								</label>
+								<label class="searchbar__checkout">
+									<span class="screen-reader-only">
+									</span>
+									<input
+									id="checkout"
+									type="text"
+									class="checkout input-large input-contrast"
+									name="checkout"
+									placeholder="Salida" />
+								</label>
+								<label class="searchbar__guests">
+									<span class="screen-reader-only">
+										Huspedes
+									</span>
+									<!---problemas con el select se repite-->
+									<div class="select select-large">
+										<select id="guests" name="guests">
+
+										</select>
+									</div>
+								</label>
+							</div>
+							<button
+							id="submit_location"
+							type="submit"
+							class="searchbar__submit btn btn-primary btn-large">
+							Buscar
+						</button>
+						<input type="hidden" name="source" value="bb">
+					</form>
 				</div>
 			</div>
-		</div><!-- cerrado row -->
-		<!------EXPERIENCIAS------>
+			<div class="row">
+			<div class="col s12 m12">
+			<h5>Alojamientos Recomendados</h5>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col s12 m4">
+					<img src="img-home/aloja1.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+					<br>
+					<p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
+					<br>
+					<p>
+						<span class="rating">
+							<span>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star_border</i>
+								60 evaluaciones
+							</span>
+						</span>
+					</p>
+				</div>
+				<div class="col s12 m4">
+					<img src="img-home/aloja2.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+					<br>
+					<p class="titulo"><strong>$35 </strong> Habitación privada en Londres</p>
+					<br>
+					<p>
+						<span class="rating">
+							<span>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star_border</i>
+								110 evaluaciones
+							</span>
+						</span>
+					</p>
+				</div>
+				<div class="col s12 m4">
+					<img src="img-home/aloja3.jpg" class="responsive-img" height="300" width="350" alt="">
+					<br>
+					<p><strong>$31 </strong> Habitación privada en Seogsan</p>
+					<br>
+					<p>
+						<span class="rating">
+							<span>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star</i>
+								<i class="tiny material-icons">star_border</i>
+								87 evaluaciones
+							</span>
+						</span>
+					</p>
+				</div>
+			</div>
+			<!------EXPERIENCIAS------>
+			<div>
+				<h5>Experiencias</h5>
+			</div>
+			<div class="owl-nome owl-carousel owl-theme">
+				<div class="item"><img src="img-home/multiple1.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/multiple2real.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/multiple2.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/multiple4.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/Sin título.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+
+			</div>
+			<!-----ALOJAMIENTOS-->
+			<div class="container" style="width:90%">
+				<div class="classe owl-carousel owl-theme">
+					<div class="item">
+						<img src="img-home/casa.PNG"/>
+						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+					</div>
+					<div class="item">
+						<img src="img-home/casa-apt.PNG"/>
+						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+					</div>
+					<div class="item">
+						<img src="img-home/casa-apt-2.PNG"/>
+						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+					</div>
+					<div class="item">
+						<img src="img-home/casa-apt-3.PNG"/>
+						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+					</div>
+				</div>
+			</div>
+			<!---EXPERIENCIA SOLIDARIA-->
+			<div>
+				<h5>Experiencia solidaria</h5>
+			</div>
+			<div class="owl-nome owl-carousel owl-theme">
+				<div class="item"><img src="img-home/sarah.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/mario.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/jack.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/laura.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+				<div class="item"><img src="img-home/aurelien.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+			</div>
+			<!---SE ANFITRION-->
+			<div class="row">
+				<div class="col s12 m12">
+					<div class="divider"></div>
+				</div>
+				<div id="hosting_opportunity_div">
+					<div id="hosting_opportunity_div_1">
+						<p id="hosting_opportunity_text">
+							Ser anfitrión te abre un mundo lleno de oportunidades.
+						</p>
+						<p id="earn_money_text">
+							Gana dinero compartiendo tu espacio libre con los huéspedes.
+						</p>
+						<button class="what_earn_link"><a href="#" >
+							cuanto puedes ganar
+						</a></button>
+					</div>
+					<div id="hosting_opportunity_div_2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12">
+			<h5>Alojamientos Recomendados</h5>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col s12 m4">
-				<img src="img-home/aloja1.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+				<img src="img-home/living-room-3.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
 				<br>
 				<p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
-				<br>
 				<p>
 					<span class="rating">
 						<span>
@@ -74,9 +251,9 @@
 				</p>
 			</div>
 			<div class="col s12 m4">
-				<img src="img-home/aloja2.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+				<img src="img-home/living-room.PNG" class="responsive-img" height="300" width="350" alt="">
 				<br>
-				<p class="titulo"><strong>$35 </strong> Habitación privada en Londres</p>
+				<p class="titulo"><strong>$35 </strong> Habitación privada en Seul</p>
 				<br>
 				<p>
 					<span class="rating">
@@ -92,7 +269,7 @@
 				</p>
 			</div>
 			<div class="col s12 m4">
-				<img src="img-home/aloja3.jpg" class="responsive-img" height="300" width="350" alt="">
+				<img src="img-home/living-room-2.PNG" class="responsive-img" height="300" width="350" alt="">
 				<br>
 				<p><strong>$31 </strong> Habitación privada en Seogsan</p>
 				<br>
@@ -110,121 +287,111 @@
 				</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col s12 m12">
-				<div class="divider"></div>
-				<h6>Alojamientos Recomendados</h6>
-				<br>
-			</div>
-			<div id="hosting_opportunity_div">
-				<div id="hosting_opportunity_div_1">
-					<p id="hosting_opportunity_text">
-						Ser anfitrión te abre un mundo lleno de oportunidades.
-					</p>
-					<p id="earn_money_text">
-						Gana dinero compartiendo tu espacio libre con los huéspedes.
-					</p>
-					<button class="what_earn_link"><a href="#" >
-						cuanto puedes ganar
-					</a></button>
-				</div>
-				<div id="hosting_opportunity_div_2">
-				</div>
-			</div>
+		<div>
+			<h5>Experiencia: Arte y diseño</h5>
 		</div>
-	</div>
-	<!--Este es el footer -->
-	<footer class="page-container-responsive footer-container">
-		<div class="divider"></div>
-		<div class="container cont-footer">
-			<div class="row">
-				<div class="col s3 m3">
-					<div class="divider"></div>
-					<select class="browser-default">
-						<option value="" disabled selected id="idioma">Español</option>
-						<option value="1" id="moneda">Inglés</option>
-						<option value="2" id="moneda">Portugués</option>
-						<option value="3" id="moneda">Alemán</option>
-					</select>
-					<select class="browser-default">
-						<option value="" disabled selected id="moneda">USD</option>
-						<option value="1">CLP</option>
-						<option value="2">BRL</option>
-						<option value="3">EUR</option>
-					</select>
-				</div>
-				<div class="col s3 m3">	 <!-- Emelys -->
-					<p class="title1-footer">Airbnb</p>
-					<ul class="section table-of-contents">
+		<div class="owl-nome owl-carousel owl-theme">
+			<div class="item"><img src="img-home/concert.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+			<div class="item"><img src="img-home/multiple4.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+			<div class="item"><img src="img-home/apexer.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+			<div class="item"><img src="img-home/laura.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+			<div class="item"><img src="img-home/aurelien.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+		</div>
+		<!--Este es el footer -->
+		<footer class="page-container-responsive footer-container">
+			<div class="divider"></div>
+			<div class="container cont-footer">
+				<div class="row">
+					<div class="col s3 m3">
+						<div class="divider"></div>
+						<select class="browser-default">
+							<option value="" disabled selected id="idioma">Español</option>
+							<option value="1" id="moneda">Inglés</option>
+							<option value="2" id="moneda">Portugués</option>
+							<option value="3" id="moneda">Alemán</option>
+						</select>
+						<select class="browser-default">
+							<option value="" disabled selected id="moneda">USD</option>
+							<option value="1">CLP</option>
+							<option value="2">BRL</option>
+							<option value="3">EUR</option>
+						</select>
+					</div>
+					<div class="col s3 m3">	 <!-- Emelys -->
+						<p class="title1-footer">Airbnb</p>
+						<ul class="section table-of-contents">
 
-						<li><a href="#">Acerca de</a></li>
-						<li><a href="#">Empleo</a></li>
-						<li><a href="#">Prensa</a></li>
-						<li><a href="#">Políticas</a></li>
-						<li><a href="#">Ayuda</a></li>
-						<li><a href="#">Diversidad y sentido de pertenencia</a></li>
-					</ul>
+							<li><a href="#">Acerca de</a></li>
+							<li><a href="#">Empleo</a></li>
+							<li><a href="#">Prensa</a></li>
+							<li><a href="#">Políticas</a></li>
+							<li><a href="#">Ayuda</a></li>
+							<li><a href="#">Diversidad y sentido de pertenencia</a></li>
+						</ul>
+					</div>
+					<div class="col s3 m3">
+						<p class="title1-footer">Descubre Airbnb</p>
+						<ul class="section table-of-contents">
+							<li><a href="#">Confianza y seguridad</a></li>
+							<li><a href="#">Invitar a un amigo</a></li>
+							<li><a href="#">Airbnb Citizen</a></li>
+							<li><a href="#">Viajes de negocios</a></li>
+							<li><a href="#">Guías</a></li>
+						</ul>
+					</div>
+					<div class="col s3 m3">
+						<p class="title1-footer">Hospedar</p>
+						<ul class="section table-of-contents">
+							<li><a href="#">Razones para hospedar</a></li>
+							<li><a href="#">Hospitalidad</a></li>
+							<li><a href="#">Ser un anfitrión responsable</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="col s3 m3">
-					<p class="title1-footer">Descubre Airbnb</p>
-					<ul class="section table-of-contents">
-						<li><a href="#">Confianza y seguridad</a></li>
-						<li><a href="#">Invitar a un amigo</a></li>
-						<li><a href="#">Airbnb Citizen</a></li>
-						<li><a href="#">Viajes de negocios</a></li>
-						<li><a href="#">Guías</a></li>
-					</ul>
-				</div>
-				<div class="col s3 m3">
-					<p class="title1-footer">Hospedar</p>
-					<ul class="section table-of-contents">
-						<li><a href="#">Razones para hospedar</a></li>
-						<li><a href="#">Hospitalidad</a></li>
-						<li><a href="#">Ser un anfitrión responsable</a></li>
-					</ul>
+				<div class="divider"></div>
+				<div class="row ultima-linea-footer"> <!--logo footer -->
+					<div class="col s1 m1">
+						<img src="img-search/favicon.ico">
+					</div>
+					<div class="col s1 m4">
+						<span > © Airbnb, Inc.</span>
+					</div>
+					<div class="col s6 m6 right">
+						<span >Términos y Privacidad</span>
+						<span >Mapa del sitio</span>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
 				</div>
 			</div>
-			<div class="divider"></div>
-			<div class="row ultima-linea-footer"> <!--logo footer -->
-				<div class="col s1 m1">
-					<img src="img-search/favicon.ico">
-				</div>
-				<div class="col s1 m4">
-					<span > © Airbnb, Inc.</span>
-				</div>
-				<div class="col s6 m6 right">
-					<span >Términos y Privacidad</span>
-					<span >Mapa del sitio</span>
-					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</div>
+		</footer>
+		<!--Esta es la parte de la compaginacion-->
+		<div class="container">
+			<div class="center">
+				<p>1 - 18 de más de 300 alquileres</p>
+				<ul class="pagination">
+					<!--<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>-->
+					<li class="active indigo"><a href="#!">1</a></li>
+					<li class="waves-effect"><a href="#!">2</a></li>
+					<li class="waves-effect"><a href="#!">3</a></li>
+					<li class="waves-effect"><a href="#!">...</a></li>
+					<li class="waves-effect"><a href="#!">17</a></li>
+					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+				</ul>
+				<div class="divider"></div>
+				<p>Estados Unidos > California > San Francisco</p>
+				<!--Aca termina la compaginacion del search-->
 			</div>
 		</div>
-	</footer>
-	<!--Esta es la parte de la compaginacion-->
-	<div class="container">
-		<div class="center">
-			<p>1 - 18 de más de 300 alquileres</p>
-			<ul class="pagination">
-				<!--<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>-->
-				<li class="active indigo"><a href="#!">1</a></li>
-				<li class="waves-effect"><a href="#!">2</a></li>
-				<li class="waves-effect"><a href="#!">3</a></li>
-				<li class="waves-effect"><a href="#!">...</a></li>
-				<li class="waves-effect"><a href="#!">17</a></li>
-				<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-			</ul>
-			<div class="divider"></div>
-			<p>Estados Unidos > California > San Francisco</p>
-			<!--Aca termina la compaginacion del search-->
-		</div>
-	</div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-	<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
-	<script type="text/javascript" src="src/js/source/nouislider.js"></script>
-	<script src="src/js/source/home.js"></script>
-	<script src="src/js/source/main.js"></script>
-</body>
-</html>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+		<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
+		<script type="text/javascript" src="src/js/source/nouislider.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
+
+		<script src="src/js/source/home.js"></script>
+		<script src="src/js/source/main.js"></script>
+	</body>
+	</html>
