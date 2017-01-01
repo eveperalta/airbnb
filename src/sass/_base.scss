@@ -24,13 +24,23 @@
 
 //estilos del footer
 #moneda {
-font-family: Roboto, Helvetica;
+font-family: Arial, Helvetica;
 }
 
 #idioma {
-font-family: Roboto, Helvetica;
+	font-family: Arial, Helvetica;
 }
 
 .cont-footer{
-	margin-top:40px;
+	div{
+		a{
+			text-decoration:none;
+		}
+	}  
 }
+
+.color-footer{
+	color:$color-tabla;
+}
+
+

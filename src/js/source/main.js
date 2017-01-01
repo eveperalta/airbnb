@@ -18,4 +18,13 @@
      decimals: 0
    })*/ //est FUNCION DEBERIA CREAR EL SLIDER POR FAVOR VERIFICAR
   });
+   $(document).ready(function() {
+
+
+   $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+
+  });
   
