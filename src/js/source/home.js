@@ -6,16 +6,23 @@ $(document).ready(function() {
 
 	$('.carousel.carousel-slider').carousel({full_width: true});
 
+
+
 /////INPUT BUSCAR
-$('.datepicker').pickadate({
+  $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+
 });
 
 ///select
- $(document).ready(function() {
+ $(document).ready(function(){
     $('select').material_select();
-  });
+  
+    $('.searchbar__submit').click(function() {
+        $(window).attr('location','search.html');
+    });
 
    ////SLIDER DE 4
    $('.owl-nome').owlCarousel({
@@ -56,5 +63,15 @@ $(".classe").owlCarousel({
       itemsDesktopSmall : [979,3]
   });
 
+  
 });
 
+$(document).ready(function(){
+
+  $('.buscar').click(function(){
+  var llegada= document.getElementById('#P81956098').val();
+    localstorage.setItem("fechas" , llegada);
+
+    });
+
+});

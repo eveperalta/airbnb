@@ -1,386 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Airbnb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airbnb</title>
 
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="src/sass/materialize-src/fonts/roboto">
-	<!--AL ENLAZAR ESTE LINKS DE LOS PRIMEROS EL SIGUIENTE ME LO BORRA QUEDA SIN ESTILO SLIDER CON 3(ALOJAMIENTOS)-->
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css'>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="src/sass/materialize-src/fonts/roboto">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--AL ENLAZAR ESTE LINKS DE LOS PRIMEROS EL SIGUIENTE ME LO BORRA QUEDA SIN ESTILO SLIDER CON 3(ALOJAMIENTOS)-->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css'>
 
-	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
-	<link rel="stylesheet" href="dist/css/main.min.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
-	<!----------------NAV-------->
-	<nav>
-		<div class="nav-wrapper">
-			<a href="index.html" class="brand-logo"><img src="img-home/logo.png" style="width:83px;"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="#">Conviertete en anfitrion</a></li>
-				<li><a href="#">viajes</a></li>
-				<li><a href="#">mensajes</a></li>
-				<li><a href="#">Ayuda</a></li>
-				<li><a href="#"><img class="circle-default" src="img-home/user.png" style="width: 40px;"></a></li>
-			</ul>
-		</div>
-	</nav>
-	<!--------------SLIDER PRINCIPAL------------------>
-	<div class="carousel carousel-slider">
-		<a class="carousel-item" href="#one!"><img src="img-home/airbnb-home3.png"></a>
-		<a class="carousel-item" href="#two!"><img src="img-home/airbnb-home4.png"></a>
-		<a class="carousel-item" href="#three!"><img src="img-home/airbnb-home.png"></a>
-		<a class="carousel-item" href="#four!"><img src="img-home/airbnb-home2.png"></a>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col s12 m12">
-				<div id="searchbar">
-					<div class="searchbar">
-						<form id="searchbar-form" action="/s">
-							<div class="searchbar__input-wrapper">
-								<label class="searchbar__location">
-									<span class="screen-reader-only">
-										Donde
-									</span>
-									<input
-									id="location"
-									type="text"
-									class="input-large input-contrast"
-									autocomplete="off"
-									name="location"
-									placeholder="Destino, ciudad, direccion" />
-									<div id="searchbar-location-error" class="searchbar__location-error hide">
-										ingrese destino
-									</div>
-								</label>
-								<label class="searchbar__checkin">
-									<span class="screen-reader-only">
-										Cuando
-									</span>
-									<input
-									id="date"
-									type="text"
-									class=" datepicker checkin input-large input-contrast"
-									name="checkin"
-									placeholder="Llegada" />
-								</label>
-								<label class="searchbar__checkout">
-									<span class="screen-reader-only">
-									</span>
-									<input
-									id="checkout"
-									type="date"
-									class=" datepicker checkout input-large input-contrast"
-									name="checkout"
-									placeholder="Salida" />
-								</label>
-								<label class="searchbar__guests">
-									Huspedes
-									<select disabled>
-										<option value="" disabled selected>1 Huesped</option>
-										<option value="1">Option 1</option>
-										<option value="2">Option 2</option>
-										<option value="3">Option 3</option>
-										<option value="4">Option 4</option>
-										<option value="5">Option 5</option>
-										<option value="6">Option 6</option>
-									</select>
-								</label>
-							</div>
-							<button
-							id="submit_location"
-							type="submit"
-							class="searchbar__submit btn btn-primary btn-large">
-							<p>Buscar</p>
-						</button>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s12 m12">
-					<h5>Alojamientos Recomendados</h5>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s12 m4">
-					<img src="img-home/aloja1.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-					<br>
-					<p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
-					<br>
-					<p>
-						<span class="rating">
-							<span>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star_border</i>
-								60 evaluaciones
-							</span>
-						</span>
-					</p>
-				</div>
-				<div class="col s12 m4">
-					<img src="img-home/aloja2.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-					<br>
-					<p class="titulo"><strong>$35 </strong> Habitación privada en Londres</p>
-					<br>
-					<p>
-						<span class="rating">
-							<span>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star_border</i>
-								110 evaluaciones
-							</span>
-						</span>
-					</p>
-				</div>
-				<div class="col s12 m4">
-					<img src="img-home/aloja3.jpg" class="responsive-img" height="300" width="350" alt="">
-					<br>
-					<p><strong>$31 </strong> Habitación privada en Seogsan</p>
-					<br>
-					<p>
-						<span class="rating">
-							<span>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star</i>
-								<i class="tiny material-icons">star_border</i>
-								87 evaluaciones
-							</span>
-						</span>
-					</p>
-				</div>
-			</div>
-			<!------EXPERIENCIAS------>
-			<div>
-				<h5>Experiencias</h5>
-			</div>
-			<div class="owl-nome owl-carousel owl-theme">
-				<div class="item"><img src="img-home/multiple1.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/multiple2real.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/multiple2.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/multiple4.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/Sin título.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
+  <!----------------NAV-------->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img src="img-home/logo.png"  style="width:83px;"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Conviertete en anfitrion</a></li>
+        <li><a href="#">viajes</a></li>
+        <li><a href="#">mensajes</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#"><img class="circle-default" src="img-home/user.png" style="width: 40px;"></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--------------SLIDER PRINCIPAL------------------>
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="img-home/airbnb-home3.png"></a>
+    <a class="carousel-item" href="#two!"><img src="img-home/airbnb-home4.png"></a>
+    <a class="carousel-item" href="#three!"><img src="img-home/airbnb-home.png"></a>
+    <a class="carousel-item" href="#four!"><img src="img-home/airbnb-home2.png"></a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+        <div id="searchbar">
+          <div class="searchbar">
+            <form id="searchbar-form" action="/s">
+              <div class="searchbar__input-wrapper">
+                <label class="searchbar__location">
+                  <span class="screen-reader-only">
+                    Donde
+                  </span>
+                  <input
+                  id="location"
+                  type="text"
+                  class="input-large input-contrast"
+                  autocomplete="off"
+                  name="location"
+                  placeholder="Destino, ciudad, direccion" />
+                  <div id="searchbar-location-error" class="searchbar__location-error hide">
+                    ingrese destino
+                  </div>
+                </label>
+                <label class="searchbar__checkin">
+                  <span class="screen-reader-only">
+                    Cuando
+                  </span>
+                  <input
+                  id="date"
+                  type="text"
+                  class=" datepicker checkin input-large input-contrast"
+                  name="checkin"
+                  placeholder="Llegada" />
+                </label>
+                <label class="searchbar__checkout">
+                  <span class="screen-reader-only">
+                  </span>
+                  <input
+                  id="checkout"
+                  type="date"
+                  class=" datepicker checkout input-large input-contrast"
+                  name="checkout"
+                  placeholder="Salida" />
+                </label>
+                <label class="searchbar__guests">
+                  Huespedes
+                  <select disabled>
+                    <option value="" disabled selected>1 Huesped</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                    <option value="6">Option 6</option>
+                  </select>
+                </label>
+              </div>
+              <button
+              id="submit_location"
+              type="submit"
+              class="searchbar__submit btn btn-primary btn-large">
+              <p>Buscar</p>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <h5>Alojamientos Recomendados</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <img src="img-home/aloja1.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+          <br>
+          <p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                60 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col s12 m4">
+          <img src="img-home/aloja2.jpg" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+          <br>
+          <p class="titulo"><strong>$35 </strong> Habitación privada en Londres</p>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                110 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col s12 m4">
+          <img src="img-home/aloja3.jpg" class="responsive-img" height="300" width="350" alt="">
+          <br>
+          <p><strong>$31 </strong> Habitación privada en Seogsan</p>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                87 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <!------EXPERIENCIAS------>
+      <div>
+        <h5>Experiencias</h5>
+      </div>
+      <div class="owl-nome owl-carousel owl-theme">
+        <div class="item">
+          <img src="img-home/multiple1.png"><p><strong>$59 </strong>Classical music & history experience</p>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                110 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="item">
+          <img src="img-home/multiple2real.png"><p><strong>$59 </strong>Classical music & history experience</p>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                110 evaluaciones
+              </span>
+            </span>
+          </p></div>
+          <div class="item">
+            <img src="img-home/multiple2.png"><p><strong>$59 </strong>Classical music & history experience</p>
+            <p>
+              <span class="rating">
+                <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  110 evaluaciones
+                </span>
+              </span>
+            </p></div>
+            <div class="item">
+              <img src="img-home/multiple4.png"><p><strong>$59 </strong>Classical music & history experience</p>
+              <p>
+                <span class="rating">
+                  <span>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star_border</i>
+                    110 evaluaciones
+                  </span>
+                </span>
+              </p></div>
+              <div class="item">
+                <img src="img-home/Sin título.png"><p><strong>$59 </strong>Classical music & history experience</p>
+                <p>
+                  <span class="rating">
+                    <span>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star_border</i>
+                      110 evaluaciones
+                    </span>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <!-----ALOJAMIENTOS-->
+            <div class="container" style="width:90%">
+              <div class="classe owl-carousel owl-theme">
+                <div class="item">
+                  <img src="img-home/casa.PNG"/>
+                  <p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+                  <p>
+                    <span class="rating">
+                      <span>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star_border</i>
+                        110 evaluaciones
+                      </span>
+                    </span>
+                  </p>
+                </div>
+                <div class="item">
+                  <img src="img-home/casa-apt.PNG"/>
+                  <p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+                  <p>
+                    <span class="rating">
+                      <span>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star_border</i>
+                        110 evaluaciones
+                      </span>
+                    </span>
+                  </p>
+                </div>
+                <div class="item">
+                  <img src="img-home/casa-apt-2.PNG"/>
+                  <p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+                  <p>
+                    <span class="rating">
+                      <span>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star_border</i>
+                        110 evaluaciones
+                      </span>
+                    </span>
+                  </p>
+                </div>
+                <div class="item">
+                  <img src="img-home/casa-apt-3.PNG"/>
+                  <p><strong>$62 </strong>Casa/apto entero, Santiago</p>
+                  <p>
+                    <span class="rating">
+                      <span>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star_border</i>
+                        110 evaluaciones
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!---EXPERIENCIA SOLIDARIA-->
+            <div>
+              <h5>Experiencia solidaria</h5>
+            </div>
+            <div class="owl-nome owl-carousel owl-theme">
+              <div class="item"><img src="img-home/sarah.PNG">
+                <p><strong>$59 </strong>Classical music & history experience</p>
+                <p>
+                  <span class="rating">
+                    <span>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star_border</i>
+                      110 evaluaciones
+                    </span>
+                  </span>
+                </p></div>
+                <div class="item"><img src="img-home/mario.PNG">
+                  <p><strong>$59 </strong>Classical music & history experience</p>
+                  <p>
+                    <span class="rating">
+                      <span>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star</i>
+                        <i class="tiny material-icons">star_border</i>
+                        110 evaluaciones
+                      </span>
+                    </span>
+                  </p></div>
+                  <div class="item"><img src="img-home/jack.PNG">
+                    <p><strong>$59 </strong>Classical music & history experience</p>
+                    <p>
+                      <span class="rating">
+                        <span>
+                          <i class="tiny material-icons">star</i>
+                          <i class="tiny material-icons">star</i>
+                          <i class="tiny material-icons">star</i>
+                          <i class="tiny material-icons">star</i>
+                          <i class="tiny material-icons">star_border</i>
+                          110 evaluaciones
+                        </span>
+                      </span>
+                    </p></div>
+                    <div class="item"><img src="img-home/laura.PNG">
+                      <p><strong>$59 </strong>Classical music & history experience</p>
+                      <p>
+                        <span class="rating">
+                          <span>
+                            <i class="tiny material-icons">star</i>
+                            <i class="tiny material-icons">star</i>
+                            <i class="tiny material-icons">star</i>
+                            <i class="tiny material-icons">star</i>
+                            <i class="tiny material-icons">star_border</i>
+                            110 evaluaciones
+                          </span>
+                        </span>
+                      </p></div>
+                      <div class="item"><img src="img-home/aurelien.PNG">
+                        <p><strong>$59 </strong>Classical music & history experience</p>
+                        <p>
+                          <span class="rating">
+                            <span>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star_border</i>
+                              110 evaluaciones
+                            </span>
+                          </span>
+                        </p></div>
+                      </div>
+                      <!---SE ANFITRION-->
+                      <div class="row">
+                        <div class="col s12 m12">
+                          <div class="divider"></div>
+                        </div>
+                        <div id="hosting_opportunity_div">
+                          <div id="hosting_opportunity_div_1">
+                            <p id="hosting_opportunity_text">
+                              Ser anfitrión te abre un mundo lleno de oportunidades.
+                            </p>
+                            <p id="earn_money_text">
+                              Gana dinero compartiendo tu espacio libre con los huéspedes.
+                            </p>
+                            <button class="what_earn_link"><a href="#" >
+                              cuanto puedes ganar
+                            </a></button>
+                          </div>
+                          <div id="hosting_opportunity_div_2">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12 m12">
+                        <h5>Alojamientos Recomendados</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12 m4">
+                        <img src="img-home/living-room-3.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+                        <br>
+                        <p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
+                        <p>
+                          <span class="rating">
+                            <span>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star_border</i>
+                              60 evaluaciones
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="col s12 m4">
+                        <img src="img-home/living-room.PNG" class="responsive-img" height="300" width="350" alt="">
+                        <br>
+                        <p class="titulo"><strong>$35 </strong> Habitación privada en Seul</p>
+                        <p>
+                          <span class="rating">
+                            <span>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star_border</i>
+                              110 evaluaciones
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="col s12 m4">
+                        <img src="img-home/living-room-2.PNG" class="responsive-img" height="300" width="350" alt="">
+                        <br>
+                        <p><strong>$31 </strong> Habitación privada en Seogsan</p>
+                        <p>
+                          <span class="rating">
+                            <span>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star_border</i>
+                              87 evaluaciones
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <h5>Experiencia: Arte y diseño</h5>
+                    </div>
+                    <div class="owl-nome owl-carousel owl-theme">
+                      <div class="item"><img src="img-home/concert.PNG">
+                        <p><strong>$59 </strong>Classical music & history experience</p>
+                        <p>
+                          <span class="rating">
+                            <span>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star_border</i>
+                              110 evaluaciones
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="item"><img src="img-home/multiple4.png">
+                        <p><strong>$59 </strong>Classical music & history experience</p>
+                        <p>
+                          <span class="rating">
+                            <span>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star</i>
+                              <i class="tiny material-icons">star_border</i>
+                              110 evaluaciones
+                            </span>
+                          </span>
+                        </p></div>
+                        <div class="item"><img src="img-home/apexer.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+                        <div class="item"><img src="img-home/laura.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+                        <div class="item"><img src="img-home/aurelien.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
+                      </div>
+                      <footer class="footer">
+                        <hr>
+                        <div class="row container">
+                          <div class="col s3 m3">
+                            <select class="browser-default select-bajar">
+                              <option value="" disabled selected id="idioma">Español</option>
+                              <option value="1" id="moneda">Inglés</option>
+                              <option value="2" id="moneda">Portugués</option>
+                              <option value="3" id="moneda">Alemán</option>
+                            </select>
+                            <select class="browser-default select-baja">
+                              <option value="" disabled selected id="moneda">USD</option>
+                              <option value="1">CLP</option>
+                              <option value="2">BRL</option>
+                              <option value="3">EUR</option>
+                            </select>
+                          </div>
+                          <div class="col s3 m3">
+                            <div class="lista-footer">
+                              <ul>
+                                <li><span class="span">Airbnb</span></li>
+                                <li class="uno"><a href="https://www.airbnb.cl/about/about-us">Acerca de</a></li>
+                                <li><a href="https://www.airbnb.cl/careers">Empleo</a></li>
+                                <li><a href="https://press.atairbnb.com/">Prensa</a></li>
+                                <li><a href="https://www.airbnb.cl/help/topic/250/terms---policies">Políticas</a></li>
+                                <li><a href="https://www.airbnb.cl/help?from=footer">Ayuda</a></li>
+                                <li><a href="https://www.airbnb.cl/diversity">Diversidad y sentido de pertenencia</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col s3 m3">
+                            <div class="lista-footer">
+                              <ul>
+                                <li><span>Descubre Airbnb</span></li>
+                                <li class="uno"><a href="https://www.airbnb.cl/trust" class="enalces-footer"> Confianza y seguridad</a> </li>
+                                <li><a href="https://www.airbnb.cl/invite?r=6" class="enalces-footer"> Crédito para viajar</a> </li>
+                                <li><a href="https://www.airbnbcitizen.com/?utm_source=airbnb&utm_medium=footer&utm_campaign=product" class="enalces-footer" class="enalces-footer"> Airbnb Citizen</a> </li>
+                                <li><a href="https://www.airbnb.cl/business-travel?s=footer" class="enalces-footer"> Viajes de negocios</a> </li>
+                                <li><a href="https://www.airbnb.cl/things-to-do" class="enalces-footer"> Guías</a> </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col s3 m3">
+                            <div class="lista-footer">
+                              <ul>
+                                <li><span>Hospedar</span></li>
+                                <li class="uno"><a href="https://www.airbnb.cl/host"> Razones para hospedar</a></li>
+                                <li><a href="https://www.airbnb.cl/hospitality"> Hospitalidad</a></li>
+                                <li><a href="https://www.airbnb.cl/help/article/1397/responsible-hosting"> Ser un anfitrión responsable</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row container linea">
+                          <hr>
+                          <div class="links-footer">
+                            <div class="col l1">
+                              <img src="img-home/logo-footer.png">
+                            </div>
+                            <div class="col l2">
+                              <p class="a">© Airbnb, Inc</p>
+                            </div>
+                            <div class="col s12 m6 l4"></div>
+                            <div class="col s12 m6 l4">
+                              <p><a href="https://www.airbnb.cl/terms">Términos y Privacidad</a><a style="padding-left: 28px;
+                                " href="https://www.airbnb.cl/sitemaps">Mapa del sitio</a></p>
+                              </div>
+                              <div class="col l1">
+                                <p class="iconos-redes">
+                                  <a href="https://www.facebook.com/AirbnbLatam"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                  </a>
+                                  <a href="https://twitter.com/airbnb_latam"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                  <a href="https://www.instagram.com/airbnb/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </footer>
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                        <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+                        <!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
+                        <script type="text/javascript" src="src/js/source/nouislider.js"></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
+                        <script src="https://use.fontawesome.com/8577e5878f.js"></script>
+                        <script src="src/js/source/home.js"></script>
+                        <script src="src/js/source/main.js"></script>
+                      </body>
+                      </html>
 
-			</div>
-			<!-----ALOJAMIENTOS-->
-			<div class="container" style="width:90%">
-				<div class="classe owl-carousel owl-theme">
-					<div class="item">
-						<img src="img-home/casa.PNG"/>
-						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
-					</div>
-					<div class="item">
-						<img src="img-home/casa-apt.PNG"/>
-						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
-					</div>
-					<div class="item">
-						<img src="img-home/casa-apt-2.PNG"/>
-						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
-					</div>
-					<div class="item">
-						<img src="img-home/casa-apt-3.PNG"/>
-						<p><strong>$62 </strong>Casa/apto entero, Santiago</p>
-					</div>
-				</div>
-			</div>
-			<!---EXPERIENCIA SOLIDARIA-->
-			<div>
-				<h5>Experiencia solidaria</h5>
-			</div>
-			<div class="owl-nome owl-carousel owl-theme">
-				<div class="item"><img src="img-home/sarah.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/mario.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/jack.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/laura.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-				<div class="item"><img src="img-home/aurelien.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-			</div>
-			<!---SE ANFITRION-->
-			<div class="row">
-				<div class="col s12 m12">
-					<div class="divider"></div>
-				</div>
-				<div id="hosting_opportunity_div">
-					<div id="hosting_opportunity_div_1">
-						<p id="hosting_opportunity_text">
-							Ser anfitrión te abre un mundo lleno de oportunidades.
-						</p>
-						<p id="earn_money_text">
-							Gana dinero compartiendo tu espacio libre con los huéspedes.
-						</p>
-						<button class="what_earn_link"><a href="#" >
-							cuanto puedes ganar
-						</a></button>
-					</div>
-					<div id="hosting_opportunity_div_2">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s12 m12">
-				<h5>Alojamientos Recomendados</h5>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s12 m4">
-				<img src="img-home/living-room-3.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-				<br>
-				<p class="titulo"><strong>$27 </strong> Habitación privada en Seogwipo</p>
-				<p>
-					<span class="rating">
-						<span>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star_border</i>
-							60 evaluaciones
-						</span>
-					</span>
-				</p>
-			</div>
-			<div class="col s12 m4">
-				<img src="img-home/living-room.PNG" class="responsive-img" height="300" width="350" alt="">
-				<br>
-				<p class="titulo"><strong>$35 </strong> Habitación privada en Seul</p>
-				<br>
-				<p>
-					<span class="rating">
-						<span>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star_border</i>
-							110 evaluaciones
-						</span>
-					</span>
-				</p>
-			</div>
-			<div class="col s12 m4">
-				<img src="img-home/living-room-2.PNG" class="responsive-img" height="300" width="350" alt="">
-				<br>
-				<p><strong>$31 </strong> Habitación privada en Seogsan</p>
-				<br>
-				<p>
-					<span class="rating">
-						<span>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star</i>
-							<i class="tiny material-icons">star_border</i>
-							87 evaluaciones
-						</span>
-					</span>
-				</p>
-			</div>
-		</div>
-		<div>
-			<h5>Experiencia: Arte y diseño</h5>
-		</div>
-		<div class="owl-nome owl-carousel owl-theme">
-			<div class="item"><img src="img-home/concert.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-			<div class="item"><img src="img-home/multiple4.png"><p><strong>$59 </strong>Classical music & history experience</p></div>
-			<div class="item"><img src="img-home/apexer.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-			<div class="item"><img src="img-home/laura.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-			<div class="item"><img src="img-home/aurelien.PNG"><p><strong>$59 </strong>Classical music & history experience</p></div>
-		</div>
-		<footer class="page-container-responsive footer-container">
-			<div class="divider"></div>
-			<div class="container cont-footer">
-				<div class="row">
-					<div class="col s3 m3">
-						<div class="divider"></div>
-						<select class="browser-default">
-							<option value="" disabled selected id="idioma">Español</option>
-							<option value="1" id="moneda">Inglés</option>
-							<option value="2" id="moneda">Portugués</option>
-							<option value="3" id="moneda">Alemán</option>
-						</select>
-						<select class="browser-default">
-							<option value="" disabled selected id="moneda">USD</option>
-							<option value="1">CLP</option>
-							<option value="2">BRL</option>
-							<option value="3">EUR</option>
-						</select>
-					</div>
-					<div class="col s3 m3">	 <!-- Emelys -->
-						<strong>Airbnb</strong>
-						<div class="color-footer">
-							<div><a href="#">Acerca de</a></div>
-							<div><a href="#">Empleo</a></div>
-							<div><a href="#">Prensa</a></div>
-							<div><a href="#">Políticas</a></div>
-							<div><a href="#">Ayuda</a></div>
-							<div><a href="#">Diversidad y sentido de pertenencia</a></div>
-						</div>
-					</div>
-					<div class="col s3 m3">
-						<strong>Descubre Airbnb</strong>
-						<div class="color-footer">
-							<div><a href="#">Confianza y seguridad</a></div>
-							<div><a href="#">Invitar a un amigo</a></div>
-							<div><a href="#">Airbnb Citizen</a></div>
-							<div><a href="#">Viajes de negocios</a></div>
-							<div><a href="#">Guías</a></div>
-						</div>
-					</div>
-					<div class="col s3 m3">
-						<strong>Hospedar</strong>
-						<div class="color-footer">
-							<div><a href="#">Razones para hospedar</a></div>
-							<div><a href="#">Hospitalidad</a></div>
-							<div><a href="#">Ser un anfitrión responsable</a></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row ultima-linea-footer"> <!--logo footer -->
-					<div class="divider"></div>
-					<div class="col s1 m1">
-						<img src="img-search/favicon.ico">
-					</div>
-					<div class="col s2 m2">
-						<span > © Airbnb, Inc.</span>
-					</div>
-					<div class="col s2 m3">
-						<span><a href="#">Términos y Privacidad</a></span>
-					</div>
-					<div class="col s2 m2">
-						<span><a href="#">Mapa del sitio</a></span>
-					</div>
-					<div class="col m4">
-						<p>
-							<i class="fa fa-facebook fa-stack-2x" aria-hidden="true"></i>
-							<br>
-							<i class="fa fa-instagram fa-stack-2x" aria-hidden="true"></i>
-							<br>
-							<i class="fa fa-twitter fa-stack-2x" aria-hidden="true"></i>
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-		<!--<script type="text/javascript" src="dist/js/all.min.js"></script>-->
-		<script type="text/javascript" src="src/js/source/nouislider.js"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
-
-		<script src="src/js/source/home.js"></script>
-		<script src="src/js/source/main.js"></script>
-	</body>
-	</html>

@@ -1,10 +1,13 @@
+*{
+  font-family: $font;
+}
 .container{
       width: 85%;
 }
 //////nav
 nav{
   background-color:transparent;
-  color:gray;
+  color:$color-tabla;
   position: absolute;
   z-index: 3;
   box-shadow:none;
@@ -20,76 +23,71 @@ nav{
       }
     }
 }
-.circle{
+.circle-default{
     border: none;
     display: block;
     margin-left: -2px;
-    margin-top: -4px;
+    margin-top: 11px;
     border-radius: 50px;
-    }
+}
 //////////////////////////////////hosting///////////////////////////////
-
 #hosting_opportunity_div{
   position: relative;
   width: 950px;
   height: 300px;
-  background-color: white;
+  background-color: $color-font;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
 
-   #hosting_opportunity_div_1{
+#hosting_opportunity_div_1{
+ position: absolute;
+  width: 330px;
+  height: 100%;
+  margin-left: 30px;
+  
+  #hosting_opportunity_text{
+    color: $color-tabla;
+    font-size: 22px;
+    left: 50%;
+    margin-left: -110px;
+    top: 30px;
+  }
+  #earn_money_text{
+    color: $color-font;
+    left: 50%;
+    margin-left: -110px;
+    top: 120px;
+  }
+  .what_earn_link{
+    color:$color-font;
+    background-color: #19A79B;
     position: absolute;
-    width: 330px;
-    height: 100%;
-    margin-left: 30px;
+    font-weight: bold;
+    padding: 8px 21px;
+    text-decoration: none;
+    border-radius: 50px;
+    bottom: 112px;
+    left: -105px;
+    box-shadow: none;
+    border-style:none;
 
-      #hosting_opportunity_text{
-        font-family: sans-serif;
-        color: #545454;
-        font-size: 22px;
-        left: 50%;
-        margin-left: -110px;
-        top: 30px;
+    &:hover{
+      background-color: #77DCCD;
+    }
+      a{
+         color:$color-tabla;
         }
-      #earn_money_text{
-        font-family: sans-serif;
-        color: #545454;
-        left: 50%;
-        margin-left: -110px;
-        top: 120px;
-        }
-      .what_earn_link{
-        background-color: #19A79B;
-        position: absolute;
-        font-family: sans-serif;
-        color: #fff;
-        font-weight: bold;
-        padding: 8px 21px;
-        text-decoration: none;
-        border-radius: 50px;
-        bottom: 112px;
-        left: -105px;
-        box-shadow: none;
-        border-style:none;
-
-          &:hover{
-            background-color: gray;;
-          }
-          a{
-            color:#fff;
-          }
-        }
-      }
-
-  #hosting_opportunity_div_2{
-    position: absolute;
-    width: 600px;
-    height: 312px;
-    background-image: url('../../img-home/anfitrion.png');
-    background-size: cover;
-    margin-left: 410px;
+    }
+}
+#hosting_opportunity_div_2{
+  position: absolute;
+  width: 600px;
+  height: 312px;
+  background-image: url('../../img-home/anfitrion.png');
+  background-size: cover;
+  margin-left: 410px;
   }
 }
 //////Alojamientos
@@ -98,26 +96,21 @@ nav{
     width: 90%;
   }
 }
-
 img.responsive-img {
   height: 214px;
 }
-
 //////////////////carrusel multiple
-
 .owl-nome {
   .item {
     background: none;
     height: 408px;
     text-align: center;
   }
-
   .owl-dots {
     margin-top: 50px;
   }
-
   .owl-nav [class*=owl-] {
-    color: red;
+    color: $color-style-red;
     font-size: 54px;
     margin: 5px;
     padding: 4px 7px;
@@ -125,31 +118,29 @@ img.responsive-img {
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
-
     &:hover {
-      color: blue;
+      color: $color-style-blue;
       background: none;
     }
   }
-
   .owl-dots .owl-dot {
     span {
       width: 50px;
       height: 5px;
       margin: 5px 7px;
-      background: blue;
+      background: $color-style-blue;
       transition: opacity .2s ease;
       border-radius: 30px;
     }
 
     &.active span {
-      background: red;
+      background: $color-style-red;
     }
   }
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: red;
+  background: $color-style-red;
 }
 
 .owl-nome {
@@ -157,19 +148,19 @@ img.responsive-img {
     position: absolute;
     width: 100%;
     top: 26%;
-    background: blue;
+    background: $color-style-blue;
     height: 0px;
   }
 
   .owl-next {
     position: absolute;
-    background: blue;
+    background: $color-style-blue;
     right: 1%;
   }
 
   .owl-prev {
     position: absolute;
-    background: blue;
+    background: $color-style-blue;
     left: 1%;
   }
 }
@@ -188,20 +179,18 @@ img.responsive-img {
     height: 44px;
   }
   button{
-    background-color: red;
     border-radius:4px;
-    margin: 15px;
+    margin: $font-size-search;
     width: 133px;
 
       &hover{
         background-color: #ECB7B7;
       }
 
-
     p{
       margin-top: -9px;
       padding-left: 30px;
-      color: white;
+      color: $color-font;
     }
   }
 
@@ -218,12 +207,12 @@ img.responsive-img {
 .searchbar__location, .searchbar__checkin, .searchbar__checkout, .searchbar__dates--new, .searchbar__guests, .searchbar__submit {
   float: left;
   margin: 0 -1px 0 0;
-   padding-top: 23px;
-    padding-bottom: 0;
-    font-size: 15px;
+  padding-top: 23px;
+  padding-bottom: 0;
+  font-size: $font-size-search;
   vertical-align: middle;
   width: auto;
-  border: 1px solid #dce0e0;
+  border: 1px solid $borders;
   padding: 5px;
   height: 77px;
   color: black;
@@ -232,7 +221,7 @@ img.responsive-img {
 .searchbar__location {
   width: 337px;
     padding-bottom: 0;
-    font-size: 15px;
+    font-size: $font-size-search;
     letter-spacing: -0.5px;
     white-space: nowrap;
 
@@ -247,7 +236,7 @@ img.responsive-img {
 }
 
 .searchbar__location-error {
-  background: #fff;
+  background: $color-tabla;
   background: rgba(255, 255, 255, 0.8);
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
@@ -276,13 +265,13 @@ img.responsive-img {
   width:230px;
 }
 .SearchForm {
-    border: 1px solid #dce0e0;
+    border: 1px solid $borders;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 3px 0 #dce0e0;
-    -moz-box-shadow: 0 1px 3px 0 #dce0e0;
-    box-shadow: 0 1px 3px 0 #dce0e0;
+    -webkit-box-shadow: 0 1px 3px 0 $borders;
+    -moz-box-shadow: 0 1px 3px 0 $borders;
+    box-shadow: 0 1px 3px 0 $borders;
     margin-left: 0;
     margin-right: 0;
 }
@@ -341,7 +330,7 @@ img.responsive-img {
       }
 
       div {
-        color: #d43132 !important;
+        color: $color-style-red !important;
         margin: 0px !important;
         padding: 0px 0px !important;
         font-size: 50px !important;
@@ -365,13 +354,80 @@ img.responsive-img {
 
         /*IE7 fix*/
         opacity: 1;
-        background: #d0d0d0;
+        background: $borders;
       }
 
       &.active span {
-        border: 3px solid red;
-        background: red;
+        border: 3px solid $color-style-red;
+        background: $color-style-red;
       }
     }
   }
+}
+////////FOOTER/////
+footer{
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.select-bajar{
+  margin-top:33px;
+}
+.select-baja{
+  margin-top:10px;
+}
+.uno{
+   margin-top:10px;
+}
+span{
+  font-weight: bold;
+  padding-bottom:5%;
+  color:black;
+  font-size:14px;
+}
+.span{
+  margin-top:30px;
+  margin-bottom:10px;
+}
+li{
+  color:$color-tabla;
+}
+.lista-footer {
+  padding: 4px;
+  margin-top: 10px;
+  margin-left: 57px;
+  a{
+    color: $color-iconos;
+  }
+}
+.redes-sociales li {
+    color: $color-tabla;
+    width: 97%;
+    float:left;
+}
+.links-footer{
+  .a{
+    color:$color-tabla;
+    margin-left: -35px;
+  }
+a{
+  color:$color-tabla;
+}
+img{
+  width: 50px;
+  height: 40px;
+  margin-top: 8px;
+  margin-left: -12px;
+}
+.iconos-redes{
+  margin-left:-32px;
+  display:flex;
+    a{
+      margin:0px 12px;
+    }
+   }
+}
+.linea{
+  margin: 0 auto !important;
 }

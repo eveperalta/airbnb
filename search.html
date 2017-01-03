@@ -12,945 +12,975 @@
 </head>
 <body>
 <div class="container">
-  <div class="row">
-    <div class="col s12 m12">
-      <div class="section col s3 m3">
-        <h6>Fechas</h6>
+        <div class="row">
+        <div class="col s7 m7">
+          <div class="col s12 m12">
+            <div class="section col s3 m3">
+              <h6>Fechas</h6>
+            </div>
+            <div class="col s3 m3">
+              <input type="text" class="datepicker browser-default picker__input" placeholder="Llegada" readonly="" id="P81956098" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P81956098_root">
+            </div>
+            <div class="col s3 m3">
+              <input type="text" class="datepicker browser-default picker__input" placeholder="Salida" readonly="" id="P75426587" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P75426587_root">
+            </div>
+            <div class="col s3 m3"><!--FALTA AGREGAR LOS BOTONES DE MAS Y MENOS -->
+              <select class="icons">
+                <option value="" disabled selected>1 Huésped</option>
+                <option value="" data-icon="" class="">1 Adulto</option>
+                <option value="" data-icon="" class="">0 Niños</option>
+                <option value="" data-icon="" class="">0 Bebés</option>
+              </select>
+            </div>
+          </div>
+        </div><!-- FIN DEL ROW -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="divider"></div>
+          <div class="section col s3 m3">
+            <h6>Tipo de Habitación</h6>
+            <span><i class="tiny material-icons">help</i></span>
+          </div>
+          <div class="col s3 m3">
+            <form action="#">
+              <p>
+                <input type="checkbox" id="test1"/>
+                <label for="test1"><i class="tiny material-icons">home</i>Casa Entera</label>
+              </p>
+            </form>
+          </div>
+          <div class="col s3 m3">
+            <form action="#">
+              <p>
+                <input type="checkbox" id="test2"/>
+                <label for="test2"><i class="tiny material-icons">hotel</i>Habitacion Privada</label>
+              </p>
+            </form>
+          </div>
+          <div class="col s3 m3">
+            <form action="#">
+              <p>
+                <input type="checkbox" id="test3"/>
+                <label for="test3"><i class="tiny material-icons">weekend</i>Habitacion compartida</label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div><!--fin del row -->
+      <div class="row"><!--range falta agregar la otra bolita que marca los precios top -->
+        <div class="col s12 m12">
+          <div class="divider"></div>
+          <div class="section col s3 m3">
+            <h6>Rango de Precios</h6>
+          </div>
+          <div class="col s9 m9">
+            <form action="#">
+              <p class="range-field">
+                <input type="range" id="test5" min="6700" max="500,000"/>
+                <span class="thumb"></span>
+                <span class="value">$6700 CLP</span>
+                <span class="thumb"></span>
+                <span class="value right">$500,000 CLP</span>
+              </p>
+            </form>
+          </div>
+        </div><!--fin del col 12 range-->
+      </div><!--fin del row range -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="divider"></div>
+          <div class="section col s3 m3">
+            <h6><i class="tiny material-icons">flash_on</i>Reserva Inmediata</h6>
+          </div>
+          <div class="col s7 m7">
+            <p>Anuncios que no requieren que el anfitrion acepte la solicitud</p>
+          </div>
+          <div class="switch col s2 m2">
+            <label>
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+        </div><!--fon del col 12 switch -->
+      </div><!-- fin del row del switch-->
       </div>
-      <div class="col s3 m3">
-        <input type="text" class="datepicker browser-default picker__input" placeholder="Llegada" readonly="" id="P81956098" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P81956098_root">
       </div>
-      <div class="col s3 m3">
-        <input type="text" class="datepicker browser-default picker__input" placeholder="Salida" readonly="" id="P75426587" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P75426587_root">
-      </div>
-      <div class="col s3 m3"><!--FALTA AGREGAR LOS BOTONES DE MAS Y MENOS -->
-        <select class="icons">
-          <option value="" disabled selected>1 Huésped</option>
-          <option value="" data-icon="" class="">1 Adulto</option>
-          <option value="" data-icon="" class="">0 Niños</option>
-          <option value="" data-icon="" class="">0 Bebés</option>
-        </select>
-      </div>
-    </div>
-  </div><!-- FIN DEL ROW -->
-<div class="row">
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="section col s3 m3">
-      <h6>Tipo de Habitación</h6>
-      <span><i class="tiny material-icons">help</i></span>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test1"/>
-          <label for="test1"><i class="tiny material-icons">home</i>Casa Entera</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test2"/>
-          <label for="test2"><i class="tiny material-icons">hotel</i>Habitacion Privada</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test3"/>
-          <label for="test3"><i class="tiny material-icons">weekend</i>Habitacion compartida</label>
-        </p>
-      </form>
-    </div>
-  </div>
-</div><!--fin del row -->
-<div class="row"><!--range falta agregar la otra bolita que marca los precios top -->
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="section col s3 m3">
-      <h6>Rango de Precios</h6>
-    </div>
-    <div class="col s9 m9">
-      <form action="#">
-        <p class="range-field">
-          <input type="range" id="test5" min="6700" max="500,000"/>
-          <span class="thumb" style="left: 17.3594px; height: 0px; width: 0px; top: 10px; margin-left: -6px;"></span>
-          <span class="value">$6700 CLP</span>
-          <span class="thumb" style="left: 17.3594px; height: 0px; width: 0px; top: 10px; margin-left: -6px;"></span>
-          <span class="value right">$500,000 CLP</span>
-        </p>
-      </form>
-    </div>
-  </div><!--fin del col 12 range-->
-</div><!--fin del row range -->
-<div class="row">
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="section col s3 m3">
-      <h6><i class="tiny material-icons">flash_on</i>Reserva Inmediata</h6>
-    </div>
-    <div class="col s7 m7">
-      <p>Anuncios que no requieren que el anfitrion acepte la solicitud</p>
-    </div>
-    <div class="switch col s2 m2">
-      <label>
-        Off
-        <input type="checkbox">
-        <span class="lever"></span>
-        On
-      </label>
-    </div>
-  </div><!--fon del col 12 switch -->
-</div><!-- fin del row del switch-->
-</div><!--  CONTAINER FILTRO SECCION 1-->  
-<div class="container"><!--SECCION ESCONDIDA -->
-<div class="row">
-  <div class="col s12 m12"><!-- TAMAÑO-->
-    <div class="divider"></div>
-    <div class="section col s3 m3">
-      <h6>Tamaño</h6>
-    </div>
-    <div class="col s3 m3">
-      <select class="rooms">
-              <option value="" disabled selected>Habitaciones</option>
-              <option value="" data-icon="" class="">1 dormitorio</option>
-              <option value="" data-icon="" class="">2 dormitorios</option>
-              <option value="" data-icon="" class="">3 dormitorios</option>
-              <option value="" data-icon="" class="">4 dormitorios</option>
-              <option value="" data-icon="" class="">5 dormitorios</option>
-              <option value="" data-icon="" class="">6 dormitorios</option>
-              <option value="" data-icon="" class="">7 dormitorios</option>
-              <option value="" data-icon="" class="">8 dormitorios</option>
-              <option value="" data-icon="" class="">9 dormitorios</option>
-              <option value="" data-icon="" class="">10 dormitorios</option>
-            </select>
-    </div>
-        <div class="col s3 m3">
-            <select class="rooms">
-              <option value="" disabled selected>Baños</option>
-              <option value="" data-icon="" class="">0 baños</option>
-              <option value="" data-icon="" class="">0.5 baños</option>
-              <option value="" data-icon="" class="">1 baño</option>
-              <option value="" data-icon="" class="">1.5 baños</option>
-              <option value="" data-icon="" class="">2 baños</option>
-              <option value="" data-icon="" class="">2.5 baños</option>
-              <option value="" data-icon="" class="">3 baños</option>
-              <option value="" data-icon="" class="">3.5 baños</option>
-              <option value="" data-icon="" class="">4 baños</option>
-              <option value="" data-icon="" class="">4.5 baños</option>
-              <option value="" data-icon="" class="">5 baños</option>
-              <option value="" data-icon="" class="">5.5 baños</option>
-              <option value="" data-icon="" class="">6 baños</option>
-              <option value="" data-icon="" class="">6.5 baños</option>
-              <option value="" data-icon="" class="">7 baños</option>
-              <option value="" data-icon="" class="">7.5 baños</option>
-              <option value="" data-icon="" class="">+8 baños</option>
-            </select>
+    </div><!--  CONTAINER FILTRO SECCION 1-->  
+  <div class="container" id="oculto"><!--SECCION ESCONDIDA -->
+  <div class="col s7 m7">
+    <div class="row">
+      <div class="col s12 m12"><!-- TAMAÑO-->
+        <div class="divider"></div>
+        <div class="section col s3 m3">
+          <h6>Tamaño</h6>
         </div>
         <div class="col s3 m3">
-            <select class="rooms">
-              <option value="" disabled selected>Camas</option>
-              <option value="" data-icon="" class="">1 cama</option>
-              <option value="" data-icon="" class="">2 camas</option>
-              <option value="" data-icon="" class="">3 camas</option>
-              <option value="" data-icon="" class="">4 camas</option>
-              <option value="" data-icon="" class="">5 camas</option>
-              <option value="" data-icon="" class="">6 camas</option>
-              <option value="" data-icon="" class="">7 camas</option>
-              <option value="" data-icon="" class="">8 camas</option>
-              <option value="" data-icon="" class="">9 camas</option>
-              <option value="" data-icon="" class="">10 camas</option>
-              <option value="" data-icon="" class="">11 camas</option>
-              <option value="" data-icon="" class="">12 camas</option>
-              <option value="" data-icon="" class="">13 camas</option>
-              <option value="" data-icon="" class="">14 camas</option>
-              <option value="" data-icon="" class="">15 camas</option>
-              <option value="" data-icon="" class="">+16 camas</option>
-            </select>
+          <select class="rooms">
+                  <option value="" disabled selected>Habitaciones</option>
+                  <option value="" data-icon="" class="">1 dormitorio</option>
+                  <option value="" data-icon="" class="">2 dormitorios</option>
+                  <option value="" data-icon="" class="">3 dormitorios</option>
+                  <option value="" data-icon="" class="">4 dormitorios</option>
+                  <option value="" data-icon="" class="">5 dormitorios</option>
+                  <option value="" data-icon="" class="">6 dormitorios</option>
+                  <option value="" data-icon="" class="">7 dormitorios</option>
+                  <option value="" data-icon="" class="">8 dormitorios</option>
+                  <option value="" data-icon="" class="">9 dormitorios</option>
+                  <option value="" data-icon="" class="">10 dormitorios</option>
+                </select>
         </div>
-  </div><!--FINAL DEL COL12 SECCION ESCONDIDA TAMAÑO --> 
-</div><!--FINAL DEL ROW SECCION ESCONDIDA TAMAÑO --> 
-<div class="row">
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="section col s3 m3">
-      <h6>Opciones</h6>
-    </div>
-    <div class="col s3 m3">
-      <h6><i class="tiny material-icons host">layers</i>Superhost</h6>
-        <form action="#">
-          <p>
-            <input type="checkbox" id="test6"/>
-            <label for="test6">Quédate en casa de anfitriones excepcionales.</label>
-            <a href="#" class="host">Más Información</a>
-          </p>
-        </form>
-    </div>
-  </div>
-</div><!-- FINAL DE LAS OPCIONES DEL ANFITRION-->
-<div class="row"><!--SERVICIOS 1-->
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="col s2 m2">
-      <h6>Servicios</h6>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test7"/>
-          <label for="test7">Internet Inalámbrico <span>(WiFi)</span></label>
-        </p>
-      </form>
-    </div>
-    <div class="col s2 m2">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test8"/>
-          <label for="test8">TV</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test9"/>
-          <label for="test9">Cocina</label>
-      </form>
-    </div>
-    <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
-    <i class="material-icons">keyboard_arrow_down</i>
-    </a>
-  </div>
-</div><!--SERVICIOS 1-->
-<div class="container"><!--SEGUNDO FILTRO OCULTO DENTRO DE SERVICIOS -->
-  <div class="row">
-  <div class="divider"></div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test10"/>
-          <label for="test10">Acceso disponible las 24 horas</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test11"/>
-          <label for="test11">Aire Acondicionado</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test12"/>
-          <label for="test12">Apto para familias y niños</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test13"/>
-          <label for="test13">Calefacción</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test14"/>
-          <label for="test14">Champú</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test15"/>
-          <label for="test15">Chimenea interior</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test16"/>
-          <label for="test16">Desayuno</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test17"/>
-          <label for="test17">Internet</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test18"/>
-          <label for="test18">Lavadora</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test19"/>
-          <label for="test19">Perchas</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test20"/>
-          <label for="test20">Pestillo en la puerta del dormitorio</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test21"/>
-          <label for="test21">Plancha</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test22"/>
-          <label for="test22">Secador de pelo</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test23"/>
-          <label for="test23">Secadora</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test24"/>
-          <label for="test24">Portero</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test25"/>
-          <label for="test25">Timbre / interfono inalámbrico</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test26"/>
-          <label for="test26">Zona para trabajar con portátiles</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test27"/>
-          <label for="test27">TV por Satélite</label>
-        </p>
-      </form>
-    </div>
-  </div>
-</div><!--fin del segundo filtro de la seccion servicios -->
-<div class="row"><!-- SERVICIOS-->
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="col s2 m2">
-      <h6>Servicios</h6>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test28"/>
-          <label for="test28">Acceso para discapasitados</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s2 m2">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test29"/>
-          <label for="test29">Edificio con asensor</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test30"/>
-          <label for="test30">Piscina</label>
-      </form>
-    </div>
-    <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
-    <i class="material-icons">keyboard_arrow_down</i>
-    </a>
-  </div>
-</div>
-<div class="container"><!--CONTAINER OCULTO DENTRO DE SERVICIOS 2 -->
-  <div class="row">
-    <div class="divider"></div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test31"/>
-          <label for="test31">Gimnasio</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test32"/>
-          <label for="test32">Jacuzzi</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test33"/>
-          <label for="test33">Parking Gratuito</label>
-        </p>
-      </form>
-    </div>
-  </div>
- </div><!--fin del oculto-->
-
-<!-- normas de la casa-->
-<div class="row">
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="col s2 m2">
-      <h6>Normas de la casa</h6>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test34"/>
-          <label for="test34">Admite mascotas</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s2 m2">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test35"/>
-          <label for="test35">Apto para eventos</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test36"/>
-          <label for="test36">Apto para fumadores</label>
-      </form>
-    </div>
-  </div>
-</div><!-- normas de la casa-->
-<div class="row"><!-- VECINDARIOS-->
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="col s2 m2">
-      <h6>Vecindarios</h6>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test37"/>
-          <label for="test37">Palermo</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test38"/>
-          <label for="test38">Recoleta</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test39"/>
-          <label for="test39">Monserrat</label>
-      </form>
-    </div>
-    <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
-    <i class="material-icons">keyboard_arrow_down</i>
-    </a>
-  </div>
-</div>
-<div class="container"><!--CONTAINER OCULTO DENTRO DE VECINDARIOS -->
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test40"/>
-          <label for="test40">Agronomía</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test41"/>
-          <label for="test41">Almagro</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test42"/>
-          <label for="test42">Balvanegra</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test43"/>
-          <label for="test43">Barracas</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test44"/>
-          <label for="test44">Belgrano</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test45"/>
-          <label for="test45">Boedo</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test46"/>
-          <label for="test46">Caballito</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test47"/>
-          <label for="test47">Chacarita</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test48"/>
-          <label for="test48">Coghlan</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test49"/>
-          <label for="test49">Colegiales</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test50"/>
-          <label for="test50">Constitucion</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test51"/>
-          <label for="test51">Flores</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test52"/>
-          <label for="test52">La Boca</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test53"/>
-          <label for="test53">Liniers</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test54"/>
-          <label for="test54">Mataderos</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test55"/>
-          <label for="test55">Nueva Pompeya</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test56"/>
-          <label for="test56">Núñez</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test57"/>
-          <label for="test57">Parque Avellaneda</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test58"/>
-          <label for="test58">Parque Chacabuco</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test59"/>
-          <label for="test59">Parque Chas</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test60"/>
-          <label for="test60">Parque Patricios</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test90"/>
-          <label for="test90">Puerto Madero</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test61"/>
-          <label for="test61">Retiro</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test62"/>
-          <label for="test62">Saavedra</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test63"/>
-          <label for="test63">San Cristóbal</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test64"/>
-          <label for="test64">San Nicolás</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test65"/>
-          <label for="test65">San Telmo</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test66"/>
-          <label for="test66">Villa Crespo</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test67"/>
-          <label for="test67">Villa Devoto</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test68"/>
-          <label for="test68">Villa General Mitre</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test69"/>
-          <label for="test69">Villa Pueyrredón</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test70"/>
-          <label for="test70">Villa Urquiza</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test71"/>
-          <label for="test71">Villa del Parque</label>
-        </p>
-      </form>
-    </div>
-  </div>
- </div><!--fin del oculto VECINDARIOS-->
-<div class="row"><!-- IDIOMAS-->
-  <div class="col s12 m12">
-    <div class="divider"></div>
-    <div class="col s2 m2">
-      <h6>Idioma del anfritrión</h6>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test72"/>
-          <label for="test72">Español</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s2 m2">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test73"/>
-          <label for="test73">English</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s3 m3">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test74"/>
-          <label for="test74">Francés</label>
-      </form>
-    </div>
-    <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
-    <i class="material-icons">keyboard_arrow_down</i>
-    </a>
-  </div>
-</div>
-<div class="container"><!--OCULTO IDIOMAS  -->
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test75"/>
-          <label for="test75">Dansk</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test76"/>
-          <label for="test76">Deutsch</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test77"/>
-          <label for="test77">Italiano</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test78"/>
-          <label for="test78">nederlands</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test79"/>
-          <label for="test79">Português</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test80"/>
-          <label for="test80">Punjabi</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test81"/>
-          <label for="test81">עברית</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test82"/>
-          <label for="test82">中文</label>
-        </p>
-      </form>
-    </div>
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test83"/>
-          <label for="test83">日本の</label>
-        </p>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m4">
-      <form action="#">
-        <p>
-          <input type="checkbox" id="test84"/>
-          <label for="test84">한국어
-          </label>
-        </p>
-      </form>
-    </div>
-</div><!-- OCULTO IDIOMAS-->
-<div class="row"><!--BOTONOS DEL FILTRO OCULTO -->
-  <div class="col s4 m4">
-    <a class="waves-effect waves-light white btn right">
-      <span>Cancelar</span>
-    </a>
-  </div>
-  <div class="col s4 m4">
-    <a class="waves-effect waves-light red btn right">Aplicar Filtros</a>
-  </div>
-</div><!--BOTONOS DEL FILTRO OCULTO -->
-</div><!--FINAL CONTAINER SECCION ESCONDIDA -->
-
-  <div class="row"><!--OFERTAS DE CASAS -->
+            <div class="col s3 m3">
+                <select class="rooms">
+                  <option value="" disabled selected>Baños</option>
+                  <option value="" data-icon="" class="">0 baños</option>
+                  <option value="" data-icon="" class="">0.5 baños</option>
+                  <option value="" data-icon="" class="">1 baño</option>
+                  <option value="" data-icon="" class="">1.5 baños</option>
+                  <option value="" data-icon="" class="">2 baños</option>
+                  <option value="" data-icon="" class="">2.5 baños</option>
+                  <option value="" data-icon="" class="">3 baños</option>
+                  <option value="" data-icon="" class="">3.5 baños</option>
+                  <option value="" data-icon="" class="">4 baños</option>
+                  <option value="" data-icon="" class="">4.5 baños</option>
+                  <option value="" data-icon="" class="">5 baños</option>
+                  <option value="" data-icon="" class="">5.5 baños</option>
+                  <option value="" data-icon="" class="">6 baños</option>
+                  <option value="" data-icon="" class="">6.5 baños</option>
+                  <option value="" data-icon="" class="">7 baños</option>
+                  <option value="" data-icon="" class="">7.5 baños</option>
+                  <option value="" data-icon="" class="">+8 baños</option>
+                </select>
+            </div>
+            <div class="col s3 m3">
+                <select class="rooms">
+                  <option value="" disabled selected>Camas</option>
+                  <option value="" data-icon="" class="">1 cama</option>
+                  <option value="" data-icon="" class="">2 camas</option>
+                  <option value="" data-icon="" class="">3 camas</option>
+                  <option value="" data-icon="" class="">4 camas</option>
+                  <option value="" data-icon="" class="">5 camas</option>
+                  <option value="" data-icon="" class="">6 camas</option>
+                  <option value="" data-icon="" class="">7 camas</option>
+                  <option value="" data-icon="" class="">8 camas</option>
+                  <option value="" data-icon="" class="">9 camas</option>
+                  <option value="" data-icon="" class="">10 camas</option>
+                  <option value="" data-icon="" class="">11 camas</option>
+                  <option value="" data-icon="" class="">12 camas</option>
+                  <option value="" data-icon="" class="">13 camas</option>
+                  <option value="" data-icon="" class="">14 camas</option>
+                  <option value="" data-icon="" class="">15 camas</option>
+                  <option value="" data-icon="" class="">+16 camas</option>
+                </select>
+            </div>
+      </div><!--FINAL DEL COL12 SECCION ESCONDIDA TAMAÑO --> 
+    </div><!--FINAL DEL ROW SECCION ESCONDIDA TAMAÑO --> 
+    <div class="row">
     <div class="col s12 m12">
       <div class="divider"></div>
-      <br>
-      <a href="#" class="waves-effect waves-light btn">Filtro</a>
-          <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
+      <div class="section col s3 m3">
+        <h6>Opciones</h6>
+      </div>
+      <div class="col s3 m3">
+        <h6><i class="tiny material-icons host">layers</i>Superhost</h6>
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test6"/>
+              <label for="test6">Quédate en casa de anfitriones excepcionales.</label>
+              <a href="#" class="host">Más Información</a>
+            </p>
+          </form>
+      </div>
+    </div>
+  </div><!-- FINAL DE LAS OPCIONES DEL ANFITRION-->
+  <div class="row"><!--SERVICIOS 1-->
+    <div class="col s12 m12">
+      <div class="divider"></div>
+      <div class="col s2 m2">
+        <h6>Servicios</h6>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test7"/>
+            <label for="test7">Internet Inalámbrico <span>(WiFi)</span></label>
+          </p>
+        </form>
+      </div>
+      <div class="col s2 m2">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test8"/>
+            <label for="test8">TV</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test9"/>
+            <label for="test9">Cocina</label>
+        </form>
+      </div>
+      <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
+      <i class="material-icons">keyboard_arrow_down</i>
+      </a>
+    </div>
+  </div><!--SERVICIOS 1-->
+  <div class="container"><!--SEGUNDO FILTRO OCULTO DENTRO DE SERVICIOS -->
+    <div class="row">
+    <div class="divider"></div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test10"/>
+            <label for="test10">Acceso disponible las 24 horas</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test11"/>
+            <label for="test11">Aire Acondicionado</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test12"/>
+            <label for="test12">Apto para familias y niños</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test13"/>
+            <label for="test13">Calefacción</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test14"/>
+            <label for="test14">Champú</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test15"/>
+            <label for="test15">Chimenea interior</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test16"/>
+            <label for="test16">Desayuno</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test17"/>
+            <label for="test17">Internet</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test18"/>
+            <label for="test18">Lavadora</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test19"/>
+            <label for="test19">Perchas</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test20"/>
+            <label for="test20">Pestillo en la puerta del dormitorio</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test21"/>
+            <label for="test21">Plancha</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test22"/>
+            <label for="test22">Secador de pelo</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test23"/>
+            <label for="test23">Secadora</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test24"/>
+            <label for="test24">Portero</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test25"/>
+            <label for="test25">Timbre / interfono inalámbrico</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test26"/>
+            <label for="test26">Zona para trabajar con portátiles</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test27"/>
+            <label for="test27">TV por Satélite</label>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div><!--fin del segundo filtro de la seccion servicios -->
+  <div class="row"><!-- SERVICIOS-->
+    <div class="col s12 m12">
+      <div class="divider"></div>
+      <div class="col s2 m2">
+        <h6>Servicios</h6>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test28"/>
+            <label for="test28">Acceso para discapasitados</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s2 m2">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test29"/>
+            <label for="test29">Edificio con asensor</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test30"/>
+            <label for="test30">Piscina</label>
+        </form>
+      </div>
+      <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
+      <i class="material-icons">keyboard_arrow_down</i>
+      </a>
     </div>
   </div>
+  </div>
+  <div class="container"><!--CONTAINER OCULTO DENTRO DE SERVICIOS 2 -->
+    <div class="row">
+      <div class="divider"></div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test31"/>
+            <label for="test31">Gimnasio</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test32"/>
+            <label for="test32">Jacuzzi</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test33"/>
+            <label for="test33">Parking Gratuito</label>
+          </p>
+        </form>
+      </div>
+    </div>
+   </div><!--fin del oculto-->
+
+  <!-- normas de la casa-->
   <div class="row">
-    <div class="col s12 m6">
-      <img src="img-search/1-livingroom.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-            <!--<img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+    <div class="col s12 m12">
+      <div class="divider"></div>
+      <div class="col s2 m2">
+        <h6>Normas de la casa</h6>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test34"/>
+            <label for="test34">Admite mascotas</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s2 m2">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test35"/>
+            <label for="test35">Apto para eventos</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test36"/>
+            <label for="test36">Apto para fumadores</label>
+        </form>
+      </div>
+    </div>
+  </div><!-- normas de la casa-->
+  <div class="row"><!-- VECINDARIOS-->
+    <div class="col s12 m12">
+      <div class="divider"></div>
+      <div class="col s2 m2">
+        <h6>Vecindarios</h6>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test37"/>
+            <label for="test37">Palermo</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test38"/>
+            <label for="test38">Recoleta</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test39"/>
+            <label for="test39">Monserrat</label>
+        </form>
+      </div>
+      <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
+      <i class="material-icons">keyboard_arrow_down</i>
+      </a>
+    </div>
+  </div>
+  <div class="container"><!--CONTAINER OCULTO DENTRO DE VECINDARIOS -->
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test40"/>
+            <label for="test40">Agronomía</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test41"/>
+            <label for="test41">Almagro</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test42"/>
+            <label for="test42">Balvanegra</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test43"/>
+            <label for="test43">Barracas</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test44"/>
+            <label for="test44">Belgrano</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test45"/>
+            <label for="test45">Boedo</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test46"/>
+            <label for="test46">Caballito</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test47"/>
+            <label for="test47">Chacarita</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test48"/>
+            <label for="test48">Coghlan</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test49"/>
+            <label for="test49">Colegiales</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test50"/>
+            <label for="test50">Constitucion</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test51"/>
+            <label for="test51">Flores</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test52"/>
+            <label for="test52">La Boca</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test53"/>
+            <label for="test53">Liniers</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test54"/>
+            <label for="test54">Mataderos</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test55"/>
+            <label for="test55">Nueva Pompeya</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test56"/>
+            <label for="test56">Núñez</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test57"/>
+            <label for="test57">Parque Avellaneda</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test58"/>
+            <label for="test58">Parque Chacabuco</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test59"/>
+            <label for="test59">Parque Chas</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test60"/>
+            <label for="test60">Parque Patricios</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test90"/>
+            <label for="test90">Puerto Madero</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test61"/>
+            <label for="test61">Retiro</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test62"/>
+            <label for="test62">Saavedra</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test63"/>
+            <label for="test63">San Cristóbal</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test64"/>
+            <label for="test64">San Nicolás</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test65"/>
+            <label for="test65">San Telmo</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test66"/>
+            <label for="test66">Villa Crespo</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test67"/>
+            <label for="test67">Villa Devoto</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test68"/>
+            <label for="test68">Villa General Mitre</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test69"/>
+            <label for="test69">Villa Pueyrredón</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test70"/>
+            <label for="test70">Villa Urquiza</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test71"/>
+            <label for="test71">Villa del Parque</label>
+          </p>
+        </form>
+      </div>
+    </div>
+   </div><!--fin del oculto VECINDARIOS-->
+  <div class="row"><!-- IDIOMAS-->
+    <div class="col s12 m12">
+      <div class="divider"></div>
+      <div class="col s2 m2">
+        <h6>Idioma del anfritrión</h6>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test72"/>
+            <label for="test72">Español</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s2 m2">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test73"/>
+            <label for="test73">English</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s3 m3">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test74"/>
+            <label for="test74">Francés</label>
+        </form>
+      </div>
+      <a class="waves-effect btn-flat"><!--ESTE BOTON DESPLIEGA EL SEGUNDO FILTRO -->
+      <i class="material-icons">keyboard_arrow_down</i>
+      </a>
+    </div>
+  </div>
+  <div class="container"><!--OCULTO IDIOMAS  -->
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test75"/>
+            <label for="test75">Dansk</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test76"/>
+            <label for="test76">Deutsch</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test77"/>
+            <label for="test77">Italiano</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test78"/>
+            <label for="test78">nederlands</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test79"/>
+            <label for="test79">Português</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test80"/>
+            <label for="test80">Punjabi</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test81"/>
+            <label for="test81">עברית</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test82"/>
+            <label for="test82">中文</label>
+          </p>
+        </form>
+      </div>
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test83"/>
+            <label for="test83">日本の</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <form action="#">
+          <p>
+            <input type="checkbox" id="test84"/>
+            <label for="test84">한국어
+            </label>
+          </p>
+        </form>
+      </div>
+  </div><!-- OCULTO IDIOMAS-->
+  <div class="row"><!--BOTONOS DEL FILTRO OCULTO -->
+    <div class="col s4 m4">
+      <a class="waves-effect waves-light white btn right">
+        <span>Cancelar</span>
+      </a>
+    </div>
+    <div class="col s4 m4">
+      <a class="waves-effect waves-light red btn right aplicar">Aplicar Filtros</a>
+    </div>
+  </div><!--BOTONOS DEL FILTRO OCULTO -->
+  </div><!--FINAL CONTAINER SECCION ESCONDIDA -->
+  </div>
+  </div>
+  <section class="container">
+    <div class="row"><!--OFERTAS DE CASAS -->
+      <div class="col s12 m12">
+        <div class="divider"></div>
+        <br>
+        <a href="#" class="waves-effect waves-light btn filtro">Filtro</a>
+            <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+    <div class="col s7 m7">
+      <div class="col s12 m6">
+        <img src="img-search/1-livingroom.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+              <!--<img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+              <br>
+              <a href="#" class="titulo"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+              <br>
+              <span>1 cama - 1 huésped</span>
+              <p>
+                <span class="rating">
+                  <span>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+                  </span>
+                </span>
+              </p>
+      </div>
+      <div class="col s12 m6">
+            <img src="img-search/2-room.PNG" class="responsive-img" height="300" width="350" alt="">
+          <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
             <br>
-            <a href="#" class="titulo"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+            <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
             <br>
             <span>1 cama - 1 huésped</span>
             <p>
@@ -961,13 +991,160 @@
                   <i class="tiny material-icons">star</i>
                   <i class="tiny material-icons">star</i>
                   <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
+                  37 evaluaciones
                 </span>
               </span>
             </p>
-    </div>
-    <div class="col s12 m6">
-          <img src="img-search/2-room.PNG" class="responsive-img" height="300" width="350" alt="">
+        </div>
+      <div class="row">
+        <div class="col s12 m6">
+              <img src="img-search/1-livingroom.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+            <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+              <br>
+              <a href="#" class="titulo"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+              <br>
+              <span>1 cama - 1 huésped</span>
+              <p>
+                <span class="rating">
+                  <span>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star</i>
+                    <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+                  </span>
+                </span>
+              </p>
+        </div>
+        <div class="col s12 m6">
+            <img src="img-search/2-room.PNG" class="responsive-img" height="300" width="350" alt="">
+          <!--   <img class="circle" src="img-search/perfil-2.PNG"> imagen circular -->
+            <br>
+            <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+            <br>
+            <span>1 cama - 1 huésped</span>
+            <p>
+              <span class="rating">
+                <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+                </span>
+              </span>
+            </p>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col s12 m6 "> 
+          <img src="img-search/5-beach.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+     <!--     <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+                <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+                </span>
+            </span>
+          </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/6-monte.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+                <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+                </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="img-search/7-terraza.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+       <!--   <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/8-home.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+      <!--    <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col s12 m6">
+          <img src="img-search/4-apartament.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                   37 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/apprtamento.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
         <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
           <br>
           <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
@@ -985,31 +1162,32 @@
               </span>
             </span>
           </p>
+        </div>
       </div>
     <div class="row">
-      <div class="col s12 m6">
-            <img src="img-search/1-livingroom.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-          <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-            <br>
-            <a href="#" class="titulo"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-            <br>
-            <span>1 cama - 1 huésped</span>
-            <p>
-              <span class="rating">
-                <span>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star</i>
-                  <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
-                </span>
+        <div class="col s12 m6">
+          <img src="img-search/4-apartament.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                   37 evaluaciones
               </span>
-            </p>
-      </div>
-      <div class="col s12 m6">
-          <img src="img-search/2-room.PNG" class="responsive-img" height="300" width="350" alt="">
-        <!--   <img class="circle" src="img-search/perfil-2.PNG"> imagen circular -->
+            </span>
+          </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/apprtamento.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
           <br>
           <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
           <br>
@@ -1026,268 +1204,16 @@
               </span>
             </span>
           </p>
+        </div>
       </div>
-    </div>
-  <div class="row">
-      <div class="col s12 m6 "> 
-        <img src="img-search/5-beach.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-   <!--     <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-              <span>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
-              </span>
-          </span>
-        </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/6-monte.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-              <span>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
-              </span>
-          </span>
-        </p>
-      </div>
-    </div>
     <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/7-terraza.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-     <!--   <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/8-home.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-    <!--    <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-    </div>
-  <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/4-apartament.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-                 37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/apprtamento.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-              37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-    </div>
-  <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/4-apartament.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-                 37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/apprtamento.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-              37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-    </div>
-  <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/Beach.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-              37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/Beach-2.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-       <!-- <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star</i>
-                <i class="tiny material-icons">star_border</i>
-                      37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-    </div>
-   <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/Beach-3.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-             <span class="rating">
-                 <span>
-                    <i class="tiny material-icons">star</i>
-                    <i class="tiny material-icons">star</i>
-                    <i class="tiny material-icons">star</i>
-                    <i class="tiny material-icons">star</i>
-                    <i class="tiny material-icons">star_border</i>
-                    37 evaluaciones
-                 </span>
-              </span>
-          </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/home.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-       <!-- <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-              37 evaluaciones
-            </span>
-          </span>
-        </p>
-      </div>
-    </div>
-  <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/living-room.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
+        <div class="col s12 m6">
+          <img src="img-search/Beach.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
           <p>
             <span class="rating">
               <span>
@@ -1300,36 +1226,56 @@
               </span>
             </span>
           </p>
-      </div>
-      <div class="col s12 m6">
-        <img src="img-search/living-room-1.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-      <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-                    37 evaluaciones
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/Beach-2.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+         <!-- <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                        37 evaluaciones
+              </span>
             </span>
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
-    </div>
-  <div class="row">
-      <div class="col s12 m6">
-        <img src="img-search/living-room.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-       <!-- <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
+     <div class="row">
+        <div class="col s12 m6">
+          <img src="img-search/Beach-3.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+               <span class="rating">
+                   <span>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star</i>
+                      <i class="tiny material-icons">star_border</i>
+                      37 evaluaciones
+                   </span>
+                </span>
+            </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/home.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+         <!-- <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
           <p>
             <span class="rating">
               <span>
@@ -1342,52 +1288,180 @@
               </span>
             </span>
           </p>
+        </div>
       </div>
-      <div class="col s12 m6">
-        <img src="img-search/living-room-1.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
-       <!-- <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
-        <br>
-        <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
-        <br>
-        <span>1 cama - 1 huésped</span>
-        <p>
-          <span class="rating">
-            <span>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star</i>
-              <i class="tiny material-icons">star_border</i>
-                    37 evaluaciones
+    <div class="row">
+        <div class="col s12 m6">
+          <img src="img-search/living-room.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+            <p>
+              <span class="rating">
+                <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+                </span>
+              </span>
+            </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/living-room-1.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+        <!--  <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                      37 evaluaciones
+              </span>
             </span>
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
-    </div>        
-  </div><!--FIN OFERTAS DE CASAS -->
-<footer> 
-<div class="row">
- <div class=" col s12 m12 left">
-    <p>1 - 18 de más de 300 alquileres</p>
-    <ul class="pagination">
-      <li class="active indigo"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">...</a></li>
-      <li class="waves-effect"><a href="#!">17</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-    </ul>
-    <div class="divider"></div>
-    <p>Argentina > Buenos Aires </p>
-    <!--Aca termina la compaginacion del search-->
-  </div>
-</div>  
-</footer>
+    <div class="row">
+        <div class="col s12 m6">
+          <img src="img-search/living-room.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+         <!-- <img class="circle" src="img-search/perfil-2.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+            <p>
+              <span class="rating">
+                <span>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star</i>
+                  <i class="tiny material-icons">star_border</i>
+                  37 evaluaciones
+                </span>
+              </span>
+            </p>
+        </div>
+        <div class="col s12 m6">
+          <img src="img-search/living-room-1.PNG" class="responsive-img" height="300" width="350" alt=""><!--esto deberia ser un slider -->
+         <!-- <img class="circle" src="img-search/perfil-1.PNG">  imagen circular -->
+          <br>
+          <a href="#"><strong>$10785 CLP</strong> Habitación privada en Buenos Aires</a>
+          <br>
+          <span>1 cama - 1 huésped</span>
+          <p>
+            <span class="rating">
+              <span>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star</i>
+                <i class="tiny material-icons">star_border</i>
+                      37 evaluaciones
+              </span>
+            </span>
+          </p>
+        </div>
+      </div> <!--FIN OFERTAS DE CASAS -->
+    </div>
+    <div>
+    <div class="col s5 m5">
+    <div id="findhotels">
+      Find hotels in:
+    </div>
+    <div id="locationField">
+      <input id="autocomplete" placeholder="Enter a city" type="text"/>
+    </div>
+  <div id="controls">
+      <select id="country">
+        <option value="all">All</option>
+        <option value="au">Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="mx">Mexico</option>
+        <option value="nz">New Zealand</option>
+        <option value="it">Italy</option>
+        <option value="za">South Africa</option>
+        <option value="es">Spain</option>
+        <option value="pt">Portugal</option>
+        <option value="us" selected>U.S.A.</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </div>
 
+    <div id="map"></div>
+
+    <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+  <footer class="paginas"> 
+  <div class="row">
+   <div class=" col s12 m12 left">
+      <p>1 - 18 de más de 300 alquileres</p>
+      <ul class="pagination">
+        <li class="active indigo"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">...</a></li>
+        <li class="waves-effect"><a href="#!">17</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+      <div class="divider"></div>
+      <p>Argentina > Buenos Aires </p>
+      <!--Aca termina la compaginacion del search-->
+    </div>
+  </div>  
+  </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjmMYEgWg0gdQMmh_KBiRCpSkP4Xmc_8k&libraries=places&callback=initMap" async defer></script>
   <script type="text/javascript" src="src/js/source/nouislider.js"></script>
-  <script type="src/js/source/home.js"></script>
   <script src="src/js/source/main.js"></script>
+  <script type="src/js/source/home.js"></script>
 </body>
 </html>
