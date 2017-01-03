@@ -6,12 +6,11 @@
 }
 //////nav
 nav{
-  background-color:$color-font;
+  background-color:transparent;
   color:$color-tabla;
   position: absolute;
   z-index: 3;
   box-shadow:none;
-  position: fixed;
     li{
       color:green !important;
       padding-left: 12px;
