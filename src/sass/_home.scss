@@ -6,7 +6,7 @@
 }
 //////nav
 nav{
-  background-color:transparent;
+  background-color:$color-font;
   color:$color-tabla;
   position: absolute;
   z-index: 3;
@@ -430,4 +430,7 @@ img{
 }
 .linea{
   margin: 0 auto !important;
+}
+.owl-stage-outer{
+  height:550px;
 }
