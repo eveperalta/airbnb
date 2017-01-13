@@ -6,12 +6,11 @@
 }
 //////nav
 nav{
-  background-color:transparent;
+  background-color:transparent !important;
   color:$color-tabla;
   position: absolute;
   z-index: 3;
   box-shadow:none;
-  position: fixed;
     li{
       color:green !important;
       padding-left: 12px;
@@ -29,6 +28,10 @@ nav{
     margin-left: -2px;
     margin-top: 11px;
     border-radius: 50px;
+    width:40px;
+}
+.brand-logo{
+  width:83px;
 }
 //////////////////////////////////hosting///////////////////////////////
 #hosting_opportunity_div{
@@ -430,4 +433,7 @@ img{
 }
 .linea{
   margin: 0 auto !important;
+}
+.owl-stage-outer{
+  height:550px;
 }

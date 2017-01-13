@@ -26,7 +26,7 @@ body{
 }
 //mapa estilos
 #map{
-	 height:100vh;
+	 height:250vh;
 	 width: 440px;
 	 margin-top:50px;
 }
@@ -110,6 +110,27 @@ table {
     height: 25px;
     left: 1000px;
 }
-.owl-stage-outer{
-	height:550px;
+#autocomplete{
+    width: 100%;
+    position: relative;
+    top: 600px;
+}
+.check{
+	margin-top:60px;
+}
+nav{
+  background-color:$color-font;
+  color:$color-tabla;
+  position: absolute;
+  box-shadow:none;
+    li{
+      color:green !important;
+      padding-left: 12px;
+      a{
+        color: #949393;
+      }
+      nav ul li{
+        padding-left: 12px;
+      }
+    }
 }
